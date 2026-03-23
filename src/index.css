@@ -1,14 +1,48 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
 
+:root {
+  --background: 224 71% 4%;
+  --foreground: 213 31% 91%;
+  
+  --primary: 199 89% 48%;
+  --primary-foreground: 210 40% 98%;
+  
+  --secondary: 222 47% 11%;
+  --secondary-foreground: 210 40% 98%;
+  
+  --muted: 223 47% 11%;
+  --muted-foreground: 215.4 16.3% 56.9%;
+  
+  --accent: 216 34% 17%;
+  --accent-foreground: 210 40% 98%;
+  
+  --destructive: 0 63% 31%;
+  --destructive-foreground: 210 40% 98%;
+
+  --border: 216 34% 17%;
+  --input: 216 34% 17%;
+  --ring: 224 76% 48%;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  @apply bg-slate-950 text-slate-100 antialiased;
+}
+
+/* Custom Glassmorphism Utility */
+.glass {
+  @apply bg-slate-900/60 backdrop-blur-md border border-slate-800/50 shadow-xl;
+}
+
+.glass-header {
+  @apply bg-slate-950/80 backdrop-blur-lg border-b border-slate-800/50 sticky top-0 z-50;
+}
+
+/* Animations */
 @keyframes flip {
-  0% {
-    transform: rotateX(90deg);
-    opacity: 0;
-  }
-  100% {
-    transform: rotateX(0);
-    opacity: 1;
-  }
+  0% { transform: rotateX(90deg); opacity: 0; }
+  100% { transform: rotateX(0); opacity: 1; }
 }
 
 .flip-tile {
@@ -27,11 +61,7 @@
   animation: shake 0.4s ease;
 }
 
-@keyframes scaleIn {
-  from { transform: scale(0.8); opacity: 0; }
-  to { transform: scale(1); opacity: 1; }
-}
-
-.animate-scaleIn {
-  animation: scaleIn 0.3s ease;
+/* Gradient Text */
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-sky-400 to-indigo-500;
 }

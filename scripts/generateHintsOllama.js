@@ -48,38 +48,33 @@ const CONCRETE_WORDS = new Set([
 ]);
 
 function buildPrompt(movie) {
-  const title = movie.title || "Unknown";
-  const year = movie.year || "Unknown";
-  const genre = movie.genre || "Unknown";
-  const overview = (movie.overview || "").trim() || "Not available.";
+  const parts = [
+    `Movie: ${movie.title}`,
+    `Year: ${movie.year}`,
+    `Director: ${movie.director || "Unknown"}`,
+    `Actor: ${movie.actor || "Unknown"}`,
+    `Genre: ${movie.genre || "Unknown"}`,
+    `Overview: ${movie.overview || "No overview available."}`
+  ];
 
-  return `You are generating hints for a movie guessing web app.
+  return `
+Write 5 creative, cinematic hints for the Telugu movie described below.
+The hints will be revealed one by one in a "Wordle"-style guessing game.
 
-For this movie, create exactly 5 hints with this structure:
-1) Broad situation or atmosphere
-2) Setting or environment
-3) Specific conflict
-4) Main character action
-5) Strong identifiable clue (no spoilers)
+### Guidelines for "Premium" Hints:
+1. **Progression**: Start very mysterious (level 1) and become slightly more specific (level 5).
+2. **Cinematic Flair**: Use descriptive language. Focus on iconic visuals, unique character traits, or the central conflict.
+3. **Telugu Culture**: If the movie is famous for a specific landmark, a viral song (describe the vibe, don't name it), or a legendary dialogue setup, include it.
+4. **Avoid Spoilers**: Do not reveal the ending.
+5. **No Forbidden Words**: Never use the movie title, the names of its actors, or the director.
+6. **No Generic Tropes**: Avoid "A hero saves the day" or "A boy meets a girl". Instead, say "A fierce jungle warrior adopts a dual identity" or "A motorcycle journey across India leads to a fateful mountain rescue."
+7. **Short & Punchy**: Each hint should be 10-18 words max.
 
-Hard rules:
-- 8 to 15 words per hint.
-- Each hint must include at least one concrete noun (place, object, role, relationship, event, symbol).
-- No abstract words like destiny, legacy, hierarchy, dynamics, aspiration, turmoil.
-- No metaphors. No dramatic exaggeration.
-- No generic phrases reusable across many movies.
-- No repeated sentence openings in the 5 hints.
-- Do NOT mention title, actor, director, or ending/twist.
-- Keep hints clear, direct, and playable.
+${parts.join("\n")}
 
-Return ONLY a valid JSON array of 5 strings.
-
-Movie Data:
-Title: ${title}
-Year: ${year}
-Genre: ${genre}
-Overview: ${overview}
-`;
+Return ONLY a JSON array of 5 strings.
+Example: ["Hint 1", "Hint 2", "Hint 3", "Hint 4", "Hint 5"]
+`.trim();
 }
 
 function parseJsonHints(stdout) {
@@ -118,9 +113,11 @@ function hasConcreteElement(hint) {
   return tokens.some((token) => CONCRETE_WORDS.has(token) || /\d/.test(token));
 }
 
+const COMMON_MOVIE_WORDS = new Set(["the", "a", "an", "and", "or", "but", "in", "on", "at", "to", "for", "with", "beginning", "the", "conclusion", "rise", "part", "return", "story", "epic", "legend", "movie", "film", "rise"]);
+
 function getForbiddenNameParts(movie) {
   const sources = [movie.title, movie.actor, movie.director].filter(Boolean).join(" ");
-  return tokenize(sources).filter((part) => part.length > 2);
+  return tokenize(sources).filter((part) => part.length > 2 && !COMMON_MOVIE_WORDS.has(part.toLowerCase()));
 }
 
 function containsForbiddenWord(hint) {
@@ -144,18 +141,18 @@ function isValidHint(hint, movie) {
   }
 
   const words = wordCount(hint);
-  if (words < 5 || words > 20) {
-    console.error(`  - Failed: word count ${words} is out of range (5-20)`);
+  if (words < 3 || words > 30) {
+    console.error(`  - Failed: word count ${words} is out of range (3-30)`);
     return false;
   }
-  if (containsForbiddenWord(hint)) {
-    console.error("  - Failed: contains forbidden abstract word");
-    return false;
-  }
-  if (startsGenerically(hint)) {
-    console.error("  - Failed: starts with a generic phrase");
-    return false;
-  }
+  // if (containsForbiddenWord(hint)) {
+  //   console.error("  - Failed: contains forbidden abstract word");
+  //   return false;
+  // }
+  // if (startsGenerically(hint)) {
+  //   console.error("  - Failed: starts with a generic phrase");
+  //   return false;
+  // }
   // if (!hasConcreteElement(hint)) {
   //   console.error("  - Failed: missing concrete noun or number");
   //   return false;
@@ -202,6 +199,7 @@ function generateHintsWithOllama(movie) {
         return parsed;
       } else {
         console.warn(`  - Attempt ${attempt}: Hints set failed validation.`);
+        console.log("Hints:", JSON.stringify(parsed, null, 2)); // Debug log
       }
     } else {
       console.warn(`  - Attempt ${attempt}: Failed to parse JSON hints from LLM output.`);
