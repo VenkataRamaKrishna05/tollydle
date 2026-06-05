@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import confetti from "canvas-confetti";
-import movies from "../data/curated_movies_with_hints.json";
+import curatedMovies from "../data/curated_manual_hints.json";
+import allMovies from "../data/movies.json";
 import { getTodayMovie } from "../utils/getTodayMovie";
 import GuessInput from "../components/GuessInput";
 import HintList from "../components/HintList";
@@ -82,7 +83,7 @@ function getMovieHints(movie) {
 export default function Game() {
   const [now, setNow] = useState(new Date());
   const [dayKey, setDayKey] = useState(getDayKey(new Date()));
-  const movie = getTodayMovie(movies, now);
+  const movie = getTodayMovie(curatedMovies, now);
   const allHints = getMovieHints(movie);
 
   const [attempts, setAttempts] = useState(0);
@@ -208,7 +209,7 @@ export default function Game() {
             <div className={shake ? "shake" : ""}>
               <GuessInput 
                 onGuess={handleGuess} 
-                onInputChange={(inp) => setSuggestions(inp.trim().length < 2 ? [] : movies.map(m => m.title).filter(t => t.toLowerCase().includes(inp.toLowerCase())).slice(0, 5))} 
+                onInputChange={(inp) => setSuggestions(inp.trim().length < 2 ? [] : allMovies.map(m => m.title).filter(t => t.toLowerCase().includes(inp.toLowerCase())).slice(0, 5))} 
                 disabled={gameOver} 
                 suggestions={suggestions} 
               />

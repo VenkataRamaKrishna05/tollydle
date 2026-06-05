@@ -11,28 +11,22 @@ const HINT_COUNT = 5;
 const MAX_BUFFER = 1024 * 1024 * 10;
 
 const FORBIDDEN_WORDS = [
-  "destiny",
-  "legacy",
-  "dynamics",
-  "hierarchy",
-  "aspiration",
-  "turmoil",
-  "equilibrium",
-  "metaphor",
-  "symbolizing",
-  "symbolises",
-  "symbolizes",
-  "fractures",
-  "shatters",
+  "dynamics", "hierarchy", "aspiration", "turmoil", "equilibrium", "metaphor",
+  "symbolizing", "symbolizes", "fractures", "shatters", "whispers", "silhouette",
+  "identity", "societal", "expectations", "narrative", "climax", "pivotal",
+  "turning point", "complex relationship", "influential figure", "profound",
+  "legacy", "destiny", "navigates", "unfolds", "confronts", "discovery",
+  "dramatic", "alters", "secures", "future", "encounter", "themes",
+  "exploration", "centers on", "revolves around", "struggles with",
+  "brave guy", "bad guy", "hero", "villain", "really bad", "brave hero",
+  "lots of people", "very mean", "nice person", "scary", "fun movie"
 ];
 
-const GENERIC_STARTS = [
-  "a man returns to his village",
-  "two women become central to his life",
-  "after his father loses everything",
-  "a rival waits for years",
-  "years later",
-  "following a significant loss",
+const FORBIDDEN_PHRASES = [
+  "jungle warrior", "motorcycle journey", "mountain rescue",
+  "sandalwood", "crimson dust", "shattered mirror", "forgotten kingdom",
+  "ancient betrayal", "solemn oath", "deadly game", "shifting dynamics",
+  "battle for a kingdom", "fight against evil", "heroic journey"
 ];
 
 const CONCRETE_WORDS = new Set([
@@ -50,30 +44,24 @@ const CONCRETE_WORDS = new Set([
 function buildPrompt(movie) {
   const parts = [
     `Movie: ${movie.title}`,
-    `Year: ${movie.year}`,
-    `Director: ${movie.director || "Unknown"}`,
-    `Actor: ${movie.actor || "Unknown"}`,
-    `Genre: ${movie.genre || "Unknown"}`,
     `Overview: ${movie.overview || "No overview available."}`
   ];
 
   return `
-Write 5 creative, cinematic hints for the Telugu movie described below.
-The hints will be revealed one by one in a "Wordle"-style guessing game.
+Write 5 PROGRESSIVE, PROFESSIONAL hints for a movie guessing game.
+Persona: An intelligent movie critic who uses clear, mature language.
 
-### Guidelines for "Premium" Hints:
-1. **Progression**: Start very mysterious (level 1) and become slightly more specific (level 5).
-2. **Cinematic Flair**: Use descriptive language. Focus on iconic visuals, unique character traits, or the central conflict.
-3. **Telugu Culture**: If the movie is famous for a specific landmark, a viral song (describe the vibe, don't name it), or a legendary dialogue setup, include it.
-4. **Avoid Spoilers**: Do not reveal the ending.
-5. **No Forbidden Words**: Never use the movie title, the names of its actors, or the director.
-6. **No Generic Tropes**: Avoid "A hero saves the day" or "A boy meets a girl". Instead, say "A fierce jungle warrior adopts a dual identity" or "A motorcycle journey across India leads to a fateful mountain rescue."
-7. **Short & Punchy**: Each hint should be 10-18 words max.
+### STRICT RULES:
+1. **ONLY USE THE OVERVIEW**: Base hints EXCLUSIVELY on the "Overview" text below. DO NOT add outside knowledge or details (like characters' names or professions) not found in the text.
+2. **MATURE & CONCRETE**: Avoid childish words (brave guy, bad guy, mean, hero). Use professional descriptors (protagonist, antagonist, rival, operative).
+3. **PLOT-CONCRETE**: Every hint must mention a specific narrative detail from the overview.
+4. **NO SPOILERS**: Level 1 is a vague setup; Level 5 is the unmistakable "big hook."
+5. **LIMITS**: Max 20 words per hint. No academic filler ("explores themes of").
 
 ${parts.join("\n")}
 
 Return ONLY a JSON array of 5 strings.
-Example: ["Hint 1", "Hint 2", "Hint 3", "Hint 4", "Hint 5"]
+Example: ["A man enters an opulent mansion after discovering a hidden family secret.", "He attempts to fix the broken relationships in a household that isn't his own.", "A shocking exchange at birth has given him a rightful claim in a world of privilege.", "He uses his wit to protect the family from an internal power struggle.", "A middle-class youth claims his place as the true heir to a massive estate."]
 `.trim();
 }
 
@@ -145,10 +133,10 @@ function isValidHint(hint, movie) {
     console.error(`  - Failed: word count ${words} is out of range (3-30)`);
     return false;
   }
-  // if (containsForbiddenWord(hint)) {
-  //   console.error("  - Failed: contains forbidden abstract word");
-  //   return false;
-  // }
+  if (containsForbiddenWord(hint)) {
+    console.error("  - Failed: contains forbidden abstract word/phrase");
+    return false;
+  }
   // if (startsGenerically(hint)) {
   //   console.error("  - Failed: starts with a generic phrase");
   //   return false;
@@ -246,7 +234,12 @@ let failures = 0;
 // Load existing output if it exists to support resuming
 let results = [];
 if (fs.existsSync(OUTPUT_PATH)) {
-  results = readMovies(OUTPUT_PATH);
+  try {
+    results = readMovies(OUTPUT_PATH);
+    console.log(`Loaded ${results.length} existing results from ${OUTPUT_PATH}`);
+  } catch (e) {
+    console.warn(`Failed to load ${OUTPUT_PATH}: ${e.message}. Starting fresh.`);
+  }
 }
 
 for (let i = 0; i < targetMovies.length; i += 1) {
@@ -273,6 +266,7 @@ for (let i = 0; i < targetMovies.length; i += 1) {
         results.push(updatedMovie);
       }
       successCount += 1;
+      console.log(`  - Success! Total results: ${results.length}`);
     } else {
       failures += 1;
       console.error(`Invalid hints for ${movie.title}; skipping.`);
@@ -284,6 +278,7 @@ for (let i = 0; i < targetMovies.length; i += 1) {
 
   // Periodic saving
   if (i % 5 === 0 || i === targetMovies.length - 1) {
+    console.log(`  - Saving ${results.length} entries to ${OUTPUT_PATH}...`);
     fs.writeFileSync(OUTPUT_PATH, JSON.stringify(results, null, 2));
   }
   

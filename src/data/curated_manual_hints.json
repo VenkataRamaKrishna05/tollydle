@@ -1,0 +1,722 @@
+[
+  {
+    "id": 1,
+    "title": "Baahubali: The Beginning",
+    "year": "2015",
+    "genre": "Action, Fantasy",
+    "actor": "Prabhas",
+    "overview": "A young man discovers his true heritage and fights to free an enslaved kingdom.",
+    "popularity": 100,
+    "hints": [
+      "A young man grows up in a tribe at the bottom of a massive waterfall.",
+      "He falls in love with a rebel warrior who is fighting a tyrannical king.",
+      "He manages to climb the waterfall and discovers his true identity.",
+      "A famous scene involves him carrying a giant Shiva Lingam on his shoulders.",
+      "It ends with an epic battle and a shocking betrayal by a loyal commander named Kattappa."
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Arjun Reddy",
+    "year": "2017",
+    "genre": "Drama, Romance",
+    "actor": "Vijay Deverakonda",
+    "overview": "A medical student spirals into self-destruction after his girlfriend is forced to marry another.",
+    "popularity": 99,
+    "hints": [
+      "A brilliant but aggressive medical student has a massive anger management problem.",
+      "He falls deeply in love with a junior in his college.",
+      "When she is forced to marry someone else, he spirals into alcoholism and drug abuse.",
+      "The protagonist owns an English mastiff dog.",
+      "It's a cult classic that was remade in Hindi as 'Kabir Singh'."
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Eega",
+    "year": "2012",
+    "genre": "Action, Fantasy",
+    "actor": "Nani",
+    "overview": "A murdered man is reincarnated to avenge his death and protect his love.",
+    "popularity": 98,
+    "hints": [
+      "A man is murdered by a wealthy industrialist who desires his girlfriend.",
+      "The murdered man is reincarnated to seek revenge and protect his love.",
+      "He is reborn not as another human, but as a tiny insect.",
+      "The villain is slowly driven crazy by this relentless buzzing creature.",
+      "The protagonist uses a pair of custom-made micro-goggles and needles as weapons."
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Ala Vaikunthapurramuloo",
+    "year": "2020",
+    "genre": "Action, Drama",
+    "actor": "Allu Arjun",
+    "overview": "A man who grew up in the middle class discovers he is the son of a billionaire.",
+    "popularity": 97,
+    "hints": [
+      "A middle-class employee secretly swaps his newborn son with his wealthy boss's son.",
+      "The switched child grows up in a middle-class home, facing constant neglect from his father.",
+      "He eventually gets a job in his real father's company.",
+      "The protagonist uses a stylish boardroom desk feature as a weapon in a fight.",
+      "The movie features the massive hit song 'Butta Bomma'."
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Pushpa: The Rise",
+    "year": "2021",
+    "genre": "Action, Crime",
+    "actor": "Allu Arjun",
+    "overview": "A laborer rises through the ranks of a red sandalwood smuggling syndicate.",
+    "popularity": 96,
+    "hints": [
+      "A laborer rises through the ranks of a red sandalwood smuggling syndicate.",
+      "He often brushes his hand under his chin in a signature attitude gesture.",
+      "He falls in love with a woman named Srivalli.",
+      "He forms a bitter rivalry with a ruthless police officer named Bhanwar Singh Shekhawat.",
+      "The protagonist famously says, 'Thaggedhe Le'."
+    ]
+  },
+  {
+    "id": 6,
+    "title": "RRR",
+    "year": "2022",
+    "genre": "Action, History",
+    "actor": "NTR Jr, Ram Charan",
+    "overview": "A fictitious story about two legendary revolutionaries and their journey away from home.",
+    "popularity": 95,
+    "hints": [
+      "Two men from very different backgrounds become best friends in pre-independence Delhi.",
+      "One is a fierce tribal warrior looking for a kidnapped young girl.",
+      "The other is a dedicated police officer secretly working against the British.",
+      "They eventually discover they are fighting on opposite sides.",
+      "The movie features the Oscar-winning song 'Naatu Naatu'."
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Magadheera",
+    "year": "2009",
+    "genre": "Action, Fantasy",
+    "actor": "Ram Charan",
+    "overview": "A bike stuntman discovers his past life as a great warrior of a kingdom.",
+    "popularity": 94,
+    "hints": [
+      "A modern-day stuntman gets flashes of a past life when he touches a specific woman.",
+      "400 years ago, he was a brave warrior protecting a princess.",
+      "Both he and the princess, along with their enemy, are reincarnated in the present.",
+      "There is a famous sequence where the hero fights 100 soldiers alone to protect the princess.",
+      "The villain uses a helicopter in the modern-day climax."
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Bommarillu",
+    "year": "2006",
+    "genre": "Comedy, Romance",
+    "actor": "Siddharth",
+    "overview": "A son tries to break free from his overly controlling father to marry the girl he loves.",
+    "popularity": 93,
+    "hints": [
+      "A young man has his entire life controlled by his over-affectionate and strict father.",
+      "He falls in love with a bubbly, free-spirited girl named Hasini.",
+      "His father arranges his marriage with another woman.",
+      "He asks his father to let his girlfriend stay in their house for a week to win their hearts.",
+      "The climax features an emotional breakdown where the son confronts his father about the lack of freedom."
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Pokiri",
+    "year": "2006",
+    "genre": "Action, Thriller",
+    "actor": "Mahesh Babu",
+    "overview": "A ruthless thug joins a mafia gang, but holds a secret identity.",
+    "popularity": 92,
+    "hints": [
+      "A ruthless, money-minded goon joins a powerful mafia gang in Hyderabad.",
+      "He falls in love with an aerobics instructor who hates his violent nature.",
+      "He single-handedly eliminates rival gang members and corrupt cops.",
+      "The surprising twist reveals he is actually an undercover IPS officer.",
+      "He famously says, 'Evadu kodithe dimma thirigi mind block aypothundo, aade Pandu gaadu.'"
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Geetha Govindam",
+    "year": "2018",
+    "genre": "Comedy, Romance",
+    "actor": "Vijay Deverakonda",
+    "overview": "A young lecturer accidentally creeps out a woman who turns out to be his sister-in-law.",
+    "popularity": 91,
+    "hints": [
+      "A respectful young lecturer dreams of finding the perfect traditional wife.",
+      "He accidentally takes a selfie and accidentally kisses a woman on a bus.",
+      "The woman despises him and thinks he is a pervert.",
+      "To his horror, he discovers she is the sister of his brother's fiancée.",
+      "They try to hide their animosity to ensure the wedding happens smoothly."
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Rangasthalam",
+    "year": "2018",
+    "genre": "Action, Drama",
+    "actor": "Ram Charan",
+    "overview": "A hearing-impaired man goes to war against a cruel village president.",
+    "popularity": 90,
+    "hints": [
+      "A hearing-impaired man operates a boat engine in a small village.",
+      "The village is controlled by a ruthless, tyrannical President who has ruled for 30 years.",
+      "His educated brother returns from Dubai and decides to stand in the local elections.",
+      "The brother gets assassinated, prompting the protagonist to seek revenge.",
+      "The movie ends with a shocking revelation about who actually orchestrated the murder."
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Mahanati",
+    "year": "2018",
+    "genre": "Biography, Drama",
+    "actor": "Keerthy Suresh",
+    "overview": "The biographical life story of legendary South Indian actress Savitri.",
+    "popularity": 89,
+    "hints": [
+      "A biopic tracing the life of an iconic South Indian actress.",
+      "The story is framed around two journalists trying to understand her life.",
+      "She marries a married Tamil actor and director, leading to personal struggles.",
+      "She spirals into alcoholism and financial ruin despite her massive fame.",
+      "It chronicles the life of the legendary Savitri."
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Athadu",
+    "year": "2005",
+    "genre": "Action, Thriller",
+    "actor": "Mahesh Babu",
+    "overview": "A hitman assumes the identity of a dead man to hide from the police.",
+    "popularity": 88,
+    "hints": [
+      "A professional hitman is framed for the murder of a prominent politician.",
+      "While escaping on a train, his co-passenger is accidentally killed by police.",
+      "The hitman assumes the dead man's identity and goes to his village.",
+      "He slowly bonds with the extended family who were expecting their son to return.",
+      "The climax reveals the true mastermind who hired the hitman in the first place."
+    ]
+  },
+  {
+    "id": 14,
+    "title": "Kalki 2898 AD",
+    "year": "2024",
+    "genre": "Sci-Fi, Action",
+    "actor": "Prabhas",
+    "overview": "In a post-apocalyptic world, a bounty hunter encounters a legendary immortal protecting a pregnant woman.",
+    "popularity": 87,
+    "hints": [
+      "Set in a post-apocalyptic future, a bounty hunter wants to move to a luxurious complex in the sky.",
+      "An immortal warrior from the Mahabharata is sworn to protect a pregnant woman.",
+      "The woman is carrying the avatar of a supreme deity.",
+      "The reigning supreme leader uses a super-serum extracted from pregnant women to try to achieve ultimate power.",
+      "The film blends sci-fi with ancient Indian mythology."
+    ]
+  },
+  {
+    "id": 15,
+    "title": "Jersey",
+    "year": "2019",
+    "genre": "Drama, Sport",
+    "actor": "Nani",
+    "overview": "A failed cricketer decides to return to cricket in his late thirties.",
+    "popularity": 86,
+    "hints": [
+      "A talented but failed cricketer quit the sport ten years ago.",
+      "He struggles financially and simply wants to gift a specific team jersey to his young son.",
+      "To buy the jersey and regain his son's respect, he decides to return to professional cricket at the age of 36.",
+      "Despite a hidden medical condition, he leads his team to victory.",
+      "The movie is celebrated for its emotional depth and realistic portrayal of a father-son relationship."
+    ]
+  },
+  {
+    "id": 16,
+    "title": "Srimanthudu",
+    "year": "2015",
+    "genre": "Action, Drama",
+    "actor": "Mahesh Babu",
+    "overview": "A multi-millionaire heir adopts a village to earn respect.",
+    "popularity": 85,
+    "hints": [
+      "A multi-millionaire heir realizes that wealth isn't enough and wants to earn respect.",
+      "He travels to a rural village to adopt and develop it.",
+      "He secretly falls in love with a woman from the same village who hates his rich background.",
+      "He uses a bicycle to commute instead of his luxury cars.",
+      "The protagonist single-handedly fights a local politician and his goons to protect his adopted village."
+    ]
+  },
+  {
+    "id": 17,
+    "title": "Fidaa",
+    "year": "2017",
+    "genre": "Romance, Drama",
+    "actor": "Varun Tej, Sai Pallavi",
+    "overview": "An NRI boy comes to India and falls for a village girl.",
+    "popularity": 84,
+    "hints": [
+      "An NRI boy comes to India for his older brother's wedding.",
+      "He falls in love with the bride's younger sister, an independent village girl.",
+      "Their relationship suffers due to misunderstandings and the girl's refusal to leave her father.",
+      "The heroine is from Banswada in Telangana and speaks with a strong local dialect.",
+      "The girl's famous dialogue is 'Badmash, Bakwas, Balishtha'."
+    ]
+  },
+  {
+    "id": 18,
+    "title": "Arya",
+    "year": "2004",
+    "genre": "Romance, Comedy",
+    "actor": "Allu Arjun",
+    "overview": "A free-spirited student falls for a girl already forced into a relationship.",
+    "popularity": 83,
+    "hints": [
+      "A free-spirited college student falls in love with a girl at first sight.",
+      "The girl is forced to be the girlfriend of the college bully.",
+      "The protagonist practices 'one-side love' and constantly annoys the bully.",
+      "He helps the couple elope to a remote town to protect them.",
+      "He famously asks his love interest to simply 'Feel my love'."
+    ]
+  },
+  {
+    "id": 19,
+    "title": "Julayi",
+    "year": "2012",
+    "genre": "Action, Comedy",
+    "actor": "Allu Arjun",
+    "overview": "A smart youth accidentally witnesses a massive bank robbery.",
+    "popularity": 82,
+    "hints": [
+      "A happy-go-lucky youth believes in making quick, easy money instead of working hard.",
+      "He accidentally witnesses a massive bank robbery planned by a highly intelligent criminal.",
+      "He helps the police commissioner track down the stolen money and the mastermind.",
+      "The protagonist and the villain engage in a battle of wits involving a betting ring.",
+      "The hero famously explains the difference between logic and magic."
+    ]
+  },
+  {
+    "id": 20,
+    "title": "Gabbar Singh",
+    "year": "2012",
+    "genre": "Action, Comedy",
+    "actor": "Pawan Kalyan",
+    "overview": "A reckless police officer clashes with a local goon.",
+    "popularity": 81,
+    "hints": [
+      "A young boy changes his name after being inspired by a famous Bollywood villain.",
+      "He grows up to become a reckless but righteous police officer.",
+      "He clashes with a local goon who wants to enter politics.",
+      "The hero runs a special gang of rowdy constables who wear red bandanas.",
+      "The movie is a massive blockbuster remake of the Hindi movie 'Dabangg'."
+    ]
+  },
+  {
+    "id": 21,
+    "title": "Race Gurram",
+    "year": "2014",
+    "genre": "Action, Comedy",
+    "actor": "Allu Arjun",
+    "overview": "Two drastically different brothers work against a politician.",
+    "popularity": 80,
+    "hints": [
+      "Two brothers have completely opposite personalities and constantly fight.",
+      "The older brother is a sincere police officer trying to capture a dangerous politician.",
+      "The younger brother is carefree and ends up falling in love with a girl who shows no emotions.",
+      "When the older brother is attacked, the younger brother creates a fake police force to take revenge.",
+      "The climax features a hilarious character named 'Kill Bill Pandey'."
+    ]
+  },
+  {
+    "id": 22,
+    "title": "Kushi",
+    "year": "2001",
+    "genre": "Romance, Comedy",
+    "actor": "Pawan Kalyan, Bhumika Chawla",
+    "overview": "Two college students with massive egos constantly clash but secretly admire each other.",
+    "popularity": 79,
+    "hints": [
+      "Two college students with massive egos constantly clash but secretly admire each other.",
+      "Misunderstandings keep them apart, even though they study in the same college.",
+      "A crucial conflict arises when the hero accidentally sees the heroine’s waist.",
+      "They help their respective friends elope and get married against their parents' wishes.",
+      "The hero famously searches for the heroine in the rain at a train station complex."
+    ]
+  },
+  {
+    "id": 23,
+    "title": "Okkadu",
+    "year": "2003",
+    "genre": "Action, Drama",
+    "actor": "Mahesh Babu",
+    "overview": "A kabaddi player saves a girl from a powerful factionist.",
+    "popularity": 78,
+    "hints": [
+      "A state-level Kabaddi player travels to a historical city for a match.",
+      "He accidentally ends up rescuing a girl from a powerful factionist who wants to forcefully marry her.",
+      "He hides the girl in his own house in Hyderabad without his strict police officer father knowing.",
+      "The hero physically defeats the villain at the Charminar monument.",
+      "He eventually wins the national Kabaddi championship and defeats the factionist once and for all."
+    ]
+  },
+  {
+    "id": 24,
+    "title": "Dookudu",
+    "year": "2011",
+    "genre": "Action, Comedy",
+    "actor": "Mahesh Babu",
+    "overview": "An undercover cop maintains a massive lie to keep his recovering father happy.",
+    "popularity": 77,
+    "hints": [
+      "An undercover cop is determined to take down a powerful mafia don hiding abroad.",
+      "His father, an honest politician, wakes up from a long coma.",
+      "The hero creates elaborate fake setups to make his father believe everything is perfect.",
+      "The movie features a hilarious side plot where a greedy house broker is tricked into investing in a fake movie.",
+      "It features the famous comedy character 'Padmanabha Simha'."
+    ]
+  },
+  {
+    "id": 25,
+    "title": "Happy Days",
+    "year": "2007",
+    "genre": "Drama, Romance",
+    "actor": "Varun Sandesh, Tamannaah",
+    "overview": "A coming-of-age story of a group of engineering students.",
+    "popularity": 76,
+    "hints": [
+      "A coming-of-age story that perfectly captures the four-year journey of a group of engineering students.",
+      "The group forms strong bonds despite completely different backgrounds and seniors ragging them.",
+      "A prominent storyline involves a junior boy falling deeply in love with a beautiful senior girl.",
+      "Another boy has a secret crush on a girl from an affluent, strict family.",
+      "The film ends with an emotional farewell on their graduation day."
+    ]
+  },
+  {
+    "id": 26,
+    "title": "Bharat Ane Nenu",
+    "year": "2018",
+    "genre": "Political, Drama",
+    "actor": "Mahesh Babu",
+    "overview": "An NRI suddenly becomes the Chief Minister of the state.",
+    "popularity": 75,
+    "hints": [
+      "An NRI returns to India after receiving news of his father's sudden death.",
+      "He is unexpectedly forced to take over his father's position to keep the ruling party together.",
+      "He implements strict traffic rules, heavy fines, and massive changes to the education system.",
+      "Disgusted by the corruption, he publicly resigns and fights a secret political mafia.",
+      "The film's tagline, and a repeating phrase, is 'A promise is a promise.'"
+    ]
+  },
+  {
+    "id": 27,
+    "title": "Goodachari",
+    "year": "2018",
+    "genre": "Action, Thriller",
+    "actor": "Adivi Sesh",
+    "overview": "An orphan joins an intelligence agency but is framed for an attack.",
+    "popularity": 74,
+    "hints": [
+      "An orphan who was raised by an ex-spy dreams of joining India's premier intelligence agency.",
+      "He finally gets recruited, but on graduation day, a massive terrorist attack kills the agency's leaders.",
+      "He is framed as the mastermind behind the attack and goes on the run.",
+      "He discovers a shocking connection between the terrorist group's leader and his own deceased father.",
+      "The hero is known by the operative code 'Agent 116'."
+    ]
+  },
+  {
+    "id": 28,
+    "title": "Sita Ramam",
+    "year": "2022",
+    "genre": "Romance, Drama",
+    "actor": "Dulquer Salmaan, Mrunal Thakur",
+    "overview": "An orphaned Indian army officer receives letters from an anonymous girl.",
+    "popularity": 73,
+    "hints": [
+      "An orphaned Indian army officer stationed in Kashmir receives hundreds of letters from an anonymous girl.",
+      "He tracks her down to Hyderabad and they fall deeply in love.",
+      "He is called for a secret mission to cross the border to save a rogue operative.",
+      "A young Pakistani student in the present day must deliver his final letter to the mysterious woman.",
+      "The heroine's true identity reveals she is a princess."
+    ]
+  },
+  {
+    "id": 29,
+    "title": "Hi Nanna",
+    "year": "2023",
+    "genre": "Romance, Drama",
+    "actor": "Nani, Mrunal Thakur",
+    "overview": "A single father's daughter befriends a mysterious woman with amnesia.",
+    "popularity": 72,
+    "hints": [
+      "A single father in Mumbai tells his young daughter incomplete bedtime stories about her missing mother.",
+      "The daughter befriends a woman who recently survived a serious accident and lost her memory.",
+      "The woman slowly realizes she has a deeper connection to the little girl and her father.",
+      "A crucial flashback reveals a painful sacrifice the woman made for her father’s reputation.",
+      "The movie revolves around cystic fibrosis and an emotional family reunion."
+    ]
+  },
+  {
+    "id": 30,
+    "title": "Nuvvostanante Nenoddantana",
+    "year": "2005",
+    "genre": "Romance, Comedy",
+    "actor": "Siddharth, Trisha",
+    "overview": "An NRI boy tries to win over a village girl's strict brother.",
+    "popularity": 71,
+    "hints": [
+      "A playful, rich NRI boy falls in love with a traditional village girl during a wedding.",
+      "The girl’s strict, overprotective brother hates wealthy city people because of past trauma.",
+      "The hero travels to the village and agrees to work as a farmer for an entire season to prove his love.",
+      "He must harvest more grain than the local landlord's son to win the brother's approval.",
+      "The film marked the directorial debut of Prabhu Deva."
+    ]
+  },
+  {
+    "id": 31,
+    "title": "Chatrapathi",
+    "year": "2005",
+    "genre": "Action, Drama",
+    "actor": "Prabhas",
+    "overview": "A displaced refugee rises to become a powerful leader.",
+    "popularity": 85,
+    "hints": [
+      "A family is violently separated during the evacuation of a coastal town.",
+      "A mother searches endlessly for her younger biological son while raising her adopted older son.",
+      "The older son becomes a protector of refugees exploited by a local mafia don.",
+      "The hero famously issues a warning that if anyone steps into his area, they will be cut into half.",
+      "The protagonist kills a cruel villain named Baji Rao."
+    ]
+  },
+  {
+    "id": 32,
+    "title": "Attarintiki Daredi",
+    "year": "2013",
+    "genre": "Drama, Comedy",
+    "actor": "Pawan Kalyan",
+    "overview": "A billionaire's grandson tries to reunite his fractured family.",
+    "popularity": 84,
+    "hints": [
+      "An elderly billionaire regrets a past mistake that tore his family apart.",
+      "His grandson promises to bring his estranged aunt back home before his grandfather's 80th birthday.",
+      "The hero goes to Hyderabad and secretly poses as a chauffeur for his aunt's family.",
+      "He quietly fixes the personal lives of his cousins and saves his aunt's husband from financial ruin.",
+      "The climax features a powerful emotional breakdown by the hero at a railway station."
+    ]
+  },
+  {
+    "id": 34,
+    "title": "Shiva",
+    "year": "1989",
+    "genre": "Action, Drama",
+    "actor": "Nagarjuna",
+    "overview": "A college student stands up against a violent local mobster.",
+    "popularity": 82,
+    "hints": [
+      "A new student enrolls in a university plagued by intense political violence.",
+      "He quietly observes the bullying and criminal activities orchestrated by a powerful local mobster.",
+      "To protect his friends, he brutally retaliates using a simple bicycle chain.",
+      "This creates a massive gang war that shakes the entire city's underworld.",
+      "This iconic trendsetting film marked the directorial debut of Ram Gopal Varma."
+    ]
+  },
+  {
+    "id": 36,
+    "title": "Indra",
+    "year": "2002",
+    "genre": "Action, Drama",
+    "actor": "Chiranjeevi",
+    "overview": "A peace-loving man reveals his violent past to save a family in danger.",
+    "popularity": 80,
+    "hints": [
+      "A taxi driver in Varanasi lives a quiet, helpful life with his family.",
+      "A sudden encounter forces his violent past to catch up with him.",
+      "Flashbacks reveal he was once a highly respected peace-keeping leader in his drought-stricken region.",
+      "He willingly gave up his life and property so that his rival would sign an agreement for a water reservoir.",
+      "The hero famously steps off a helicopter and buries a sickle in the ground to claim peace."
+    ]
+  },
+  {
+    "id": 35,
+    "title": "Ninne Pelladata",
+    "year": "1996",
+    "genre": "Romance, Family",
+    "actor": "Nagarjuna, Tabu",
+    "overview": "A couple struggles to convince their feuding families to let them marry.",
+    "popularity": 81,
+    "hints": [
+      "A large, happy joint family wants their favorite son to marry a girl of their choice.",
+      "He falls in love with an outsider who comes to their city for aviation training.",
+      "Her parents originally eloped in their youth, causing a major family rift.",
+      "The couple tries to secretly win the hearts of both families to avoid another shocking elopement.",
+      "The film features a massive chartbuster song named 'Greeku Veerudu'."
+    ]
+  },
+  {
+    "id": 33,
+    "title": "Kshana Kshanam",
+    "year": "1991",
+    "genre": "Thriller, Comedy",
+    "actor": "Venkatesh, Sridevi",
+    "overview": "A woman is pursued by criminals after discovering a clue to stolen money.",
+    "popularity": 83,
+    "hints": [
+      "A massive gang robbery ends with a bag of stolen money being hidden in an unexpected place.",
+      "An innocent middle-class working woman accidentally receives a photo booth envelope related to the money.",
+      "She is chased by police and a quirky, dangerous gangster who wants the envelope.",
+      "She meets a charming thief who accompanies her on a crazy road trip through forests and trains.",
+      "This classic road-trip thriller was directed by Ram Gopal Varma."
+    ]
+  },
+  {
+    "id": 37,
+    "title": "Simhadri",
+    "year": "2003",
+    "genre": "Action, Drama",
+    "actor": "NTR Jr",
+    "overview": "A faithful servant reveals a bloody past to protect his master's granddaughter.",
+    "popularity": 79,
+    "hints": [
+      "A fiercely loyal adoptive son will do anything for his master's family.",
+      "He travels to Kerala to bring his master's estranged granddaughter back home.",
+      "The girl suffers from extreme trauma and acts like a child.",
+      "A twist reveals the hero has a terrifying past in Kerala where he was a savior of the masses.",
+      "The hero takes up an axe to slaughter a massive army of goons led by a don named Bhai Saab."
+    ]
+  },
+  {
+    "id": 39,
+    "title": "Pelli Choopulu",
+    "year": "2016",
+    "genre": "Comedy, Romance",
+    "actor": "Vijay Deverakonda, Ritu Varma",
+    "overview": "Two contrasting personalities form an unexpected business partnership.",
+    "popularity": 77,
+    "hints": [
+      "A lazy engineering graduate and a focused businesswoman meet during an arranged marriage setup.",
+      "Due to a mix-up, they get locked in a room together and share their past failed relationships.",
+      "They decide not to get married but establish a food truck business together instead.",
+      "The food truck is named after the heroine, 'Prashanthi'.",
+      "This charming indie film launched the careers of Vijay Deverakonda and Tharun Bhascker."
+    ]
+  },
+  {
+    "id": 38,
+    "title": "Mirchi",
+    "year": "2013",
+    "genre": "Action, Romance",
+    "actor": "Prabhas",
+    "overview": "A man attempts to reform a violent rival village family with love.",
+    "popularity": 78,
+    "hints": [
+      "An architect returns to India and wins the hearts of his fierce rival's violent family.",
+      "He teaches the family that a smile and a hug are better than swords and bloodshed.",
+      "It is revealed that his own family suffered a tragic massacre due to this endless village rivalry.",
+      "He falls in love with a woman whose brother is ironically his biggest enemy.",
+      "The tagline of the hero's philosophy is 'Cutout chusi konni konni nammeyali dude.'"
+    ]
+  },
+  {
+    "id": 40,
+    "title": "Arundhati",
+    "year": "2009",
+    "genre": "Horror, Thriller",
+    "actor": "Anushka Shetty",
+    "overview": "A woman discovers she is the reincarnation of a warrior who fought a dark sorcerer.",
+    "popularity": 76,
+    "hints": [
+      "A soon-to-be-married woman visits her native palace and experiences terrifying paranormal events.",
+      "She discovers she is the reincarnation of her brave great-grandmother.",
+      "Her ancestor sacrificed herself to seal a powerful, shape-shifting evil sorcerer in a tomb.",
+      "The sorcerer has escaped and wants revenge against the descendant.",
+      "The climax involves the heroine mastering a weapon created from the bones of her predecessor."
+    ]
+  },
+  {
+    "id": 41,
+    "title": "C/o Kancharapalem",
+    "year": "2018",
+    "genre": "Drama, Romance",
+    "actor": "Subba Rao",
+    "overview": "Four unconventional love stories intertwine in a tight-knit neighborhood.",
+    "popularity": 75,
+    "hints": [
+      "Four different love stories unfold in a small neighborhood in Visakhapatnam.",
+      "The stories cover different age groups: childhood, youth, middle age, and old age.",
+      "A 50-year-old unmarried attendant falls for an officer from a different state.",
+      "A sculptor faces backlash from locals for his relationship with a prostitute.",
+      "A brilliant narrative twist reveals that all four stories belong to the same person."
+    ]
+  },
+  {
+    "id": 42,
+    "title": "Mathu Vadalara",
+    "year": "2019",
+    "genre": "Comedy, Thriller",
+    "actor": "Sri Simha",
+    "overview": "A delivery boy gets entangled in a surreal murder mystery.",
+    "popularity": 74,
+    "hints": [
+      "A depressed delivery boy gets cheated out of his wages and decides to secretly rob his customers.",
+      "During a delivery, he accidentally gets trapped in an apartment with a dead body.",
+      "He and his two roommates must safely dispose of the body without getting caught.",
+      "A key plot element involves a wildly exaggerated, highly dramatic fictional daily TV serial.",
+      "The main characters use sleep-inducing drugs, leading to hilarious hallucinations."
+    ]
+  },
+  {
+    "id": 43,
+    "title": "Agent Sai Srinivasa Athreya",
+    "year": "2019",
+    "genre": "Detective, Thriller",
+    "actor": "Naveen Polishetty",
+    "overview": "A brilliant but quirky detective stumbles upon a massive dark conspiracy.",
+    "popularity": 73,
+    "hints": [
+      "A brilliant but eccentric amateur detective sets up an agency in Nellore.",
+      "He wears a trench coat, a fedora, and demands people call him an FBI agent.",
+      "He accidentally uncovers a massive, horrific religious crime racket.",
+      "The villains frame him for a murder he did not commit to stop his investigation.",
+      "The hero's assistant is named Sneha, whom he frequently scolds."
+    ]
+  },
+  {
+    "id": 44,
+    "title": "Jathi Ratnalu",
+    "year": "2021",
+    "genre": "Comedy",
+    "actor": "Naveen Polishetty, Priyadarshi",
+    "overview": "Three goofy friends get framed for a major political crime.",
+    "popularity": 72,
+    "hints": [
+      "Three best friends from Jogipet move to Hyderabad to seek better lives and respect.",
+      "The main protagonist falls madly in love with a girl who lives in his apartment complex.",
+      "They accidentally stumble into a high-profile corruption scandal involving a minister.",
+      "The three friends represent themselves in court in a wildly hilarious and nonsensical trial.",
+      "The movie is packed with non-stop chaotic comedy and famous dialogues like 'Shameless fellows'."
+    ]
+  },
+  {
+    "id": 45,
+    "title": "DJ Tillu",
+    "year": "2022",
+    "genre": "Comedy, Crime",
+    "actor": "Siddhu Jonnalagadda",
+    "overview": "A flashy local DJ gets involved in covering up an accidental murder.",
+    "popularity": 71,
+    "hints": [
+      "A self-proclaimed 'Local DJ' who dresses flashily falls instantly for a mysterious woman.",
+      "The woman accidentally murders her abusive boyfriend in his apartment.",
+      "The DJ gets unwillingly dragged into disposing of the body and covering up her crimes.",
+      "He constantly blabbers under extreme stress and delivers hilarious, heavily accented monologues.",
+      "The hero's iconic dialogue is 'Atluntadhi manathoni'."
+    ]
+  }
+]
