@@ -512,19 +512,19 @@
     ]
   },
   {
-    "id": 34,
-    "title": "Shiva",
-    "year": "1989",
-    "genre": "Action, Drama",
-    "actor": "Nagarjuna",
-    "overview": "A college student stands up against a violent local mobster.",
-    "popularity": 82,
+    "id": 43,
+    "title": "Agent Sai Srinivasa Athreya",
+    "year": "2019",
+    "genre": "Detective, Thriller",
+    "actor": "Naveen Polishetty",
+    "overview": "A brilliant but quirky detective stumbles upon a massive dark conspiracy.",
+    "popularity": 73,
     "hints": [
-      "A new student enrolls in a university plagued by intense political violence.",
-      "He quietly observes the bullying and criminal activities orchestrated by a powerful local mobster.",
-      "To protect his friends, he brutally retaliates using a simple bicycle chain.",
-      "This creates a massive gang war that shakes the entire city's underworld.",
-      "This iconic trendsetting film marked the directorial debut of Ram Gopal Varma."
+      "A brilliant but eccentric amateur detective sets up an agency in Nellore.",
+      "He wears a trench coat, a fedora, and demands people call him an FBI agent.",
+      "He accidentally uncovers a massive, horrific religious crime racket.",
+      "The villains frame him for a murder he did not commit to stop his investigation.",
+      "The hero's assistant is named Sneha, whom he frequently scolds."
     ]
   },
   {
@@ -672,19 +672,19 @@
     ]
   },
   {
-    "id": 43,
-    "title": "Agent Sai Srinivasa Athreya",
-    "year": "2019",
-    "genre": "Detective, Thriller",
-    "actor": "Naveen Polishetty",
-    "overview": "A brilliant but quirky detective stumbles upon a massive dark conspiracy.",
-    "popularity": 73,
+    "id": 34,
+    "title": "Shiva",
+    "year": "1989",
+    "genre": "Action, Drama",
+    "actor": "Nagarjuna",
+    "overview": "A college student stands up against a violent local mobster.",
+    "popularity": 82,
     "hints": [
-      "A brilliant but eccentric amateur detective sets up an agency in Nellore.",
-      "He wears a trench coat, a fedora, and demands people call him an FBI agent.",
-      "He accidentally uncovers a massive, horrific religious crime racket.",
-      "The villains frame him for a murder he did not commit to stop his investigation.",
-      "The hero's assistant is named Sneha, whom he frequently scolds."
+      "A new student enrolls in a university plagued by intense political violence.",
+      "He quietly observes the bullying and criminal activities orchestrated by a powerful local mobster.",
+      "To protect his friends, he brutally retaliates using a simple bicycle chain.",
+      "This creates a massive gang war that shakes the entire city's underworld.",
+      "This iconic trendsetting film marked the directorial debut of Ram Gopal Varma."
     ]
   },
   {
@@ -717,6 +717,1366 @@
       "The DJ gets unwillingly dragged into disposing of the body and covering up her crimes.",
       "He constantly blabbers under extreme stress and delivers hilarious, heavily accented monologues.",
       "The hero's iconic dialogue is 'Atluntadhi manathoni'."
+    ]
+  },
+  {
+    "id": 46,
+    "title": "Pushpa 2: The Rule",
+    "year": "2024",
+    "genre": "Action, Crime, Drama",
+    "actor": "Allu Arjun",
+    "director": "Sukumar",
+    "overview": "As his smuggling empire grows, a brazen Pushpa longs for power and respect on his vengeful journey, while facing old rivals and new.",
+    "popularity": 9.68,
+    "hints": [
+      "The story centers on a powerful syndicate leader defending his turf against multiple rival factions.",
+      "The protagonist's sudden rise to immense wealth creates a bitter rift with a humiliated police officer.",
+      "A massive search operation is launched as the protagonist briefly goes missing, causing chaos among his followers.",
+      "The protagonist dresses in a striking traditional goddess costume to perform an intense dance during a local festival.",
+      "The high-stakes sequel to the blockbuster red sandalwood smuggling film, carrying the tagline 'The Rule'."
+    ]
+  },
+  {
+    "id": 47,
+    "title": "Salaar: Part 1 - Ceasefire",
+    "year": "2023",
+    "genre": "Action, Crime, Drama",
+    "actor": "Prabhas",
+    "director": "Prashanth Neel",
+    "overview": "Set in the fictional dystopian city-state of Khansaar, the film follows the friendship between Deva, a tribesman, and Varadha, the prince of Khansaar. When a coup d'état is planned by his father's ministers and his relatives, Varadha enlists Deva's help to become Khansaar's undisputed ruler.",
+    "popularity": 6.55,
+    "hints": [
+      "A story about deep loyalty between two childhood friends who find themselves in a violent, militarized society.",
+      "The protagonist lives a quiet life as a mechanic to respect his mother's wishes, hiding a dark, violent past.",
+      "One friend is a prince who must call upon the other's unmatched combat skills to survive an internal family coup.",
+      "The conflicts center around the internal power struggles of three powerful ruling clans in a lawless territory.",
+      "Set in the fictional, dark city-state of Khansaar, starring Prabhas as the ultimate warrior Deva."
+    ]
+  },
+  {
+    "id": 48,
+    "title": "Devara: Part 1",
+    "year": "2024",
+    "genre": "Action, Drama",
+    "actor": "N.T. Rama Rao Jr.",
+    "director": "Koratala Siva",
+    "overview": "Devara, a fearless man from a coastal region, embarks on a perilous journey into the treacherous world of the sea to safeguard the lives of his people. Unbeknownst to him, his brother Bhaira is plotting a conspiracy against him. As events unfold, Devara passes on his legacy to his mild-mannered and timid son, Varada.",
+    "popularity": 4.66,
+    "hints": [
+      "A local leader decides to abandon a highly profitable but illegal trade after realizing its destructive impact on his people.",
+      "His moral stance leads to a deadly betrayal by his closest companion in the middle of a deep-sea operation.",
+      "The leader's name becomes a symbol of absolute terror, keeping wrongdoers away from the region for years.",
+      "A mild-mannered, timid son must pretend to possess his father's fierce courage to protect his family.",
+      "NTR Jr. plays a dual role as father and son in this coastal action epic directed by Koratala Siva."
+    ]
+  },
+  {
+    "id": 49,
+    "title": "Game Changer",
+    "year": "2025",
+    "genre": "Action, Drama",
+    "actor": "Ram Charan",
+    "director": "Shankar",
+    "overview": "Ram, a newly appointed district collector, takes charge in a city in Andhra Pradesh and immediately confronts the deeply entrenched corruption and inefficiency plaguing the government. Determined to bring reforms, he initiates sweeping changes, sparking a fierce conflict with a powerful state Minister.",
+    "popularity": 3.55,
+    "hints": [
+      "A young government official is determined to enforce strict rules and integrity in his new posting.",
+      "He faces severe political backlash when he targets the deeply entrenched corruption of senior ministers.",
+      "A tragic backstory reveals his father was a selfless reformer who was betrayed by his own associates.",
+      "The protagonist introduces a cutting-edge electronic monitoring system to prevent manipulation of public votes.",
+      "Directed by Shankar and starring Ram Charan, this political action thriller features the high-energy song 'Jaragandi'."
+    ]
+  },
+  {
+    "id": 50,
+    "title": "Guntur Kaaram",
+    "year": "2024",
+    "genre": "Action, Drama",
+    "actor": "Mahesh Babu",
+    "director": "Trivikram Srinivas",
+    "overview": "Years after his mother left him and remarried, Ramana is asked to sign documents denying any relations with his mother, but he refuses and demands answer to why his mother left him.",
+    "popularity": 3.51,
+    "hints": [
+      "A fiery-tempered protagonist is deeply estranged from his mother, who left him in his childhood.",
+      "His mother has since built a powerful political career, and her relatives want the protagonist to legally cut all ties.",
+      "He refuses to sign the disownership documents and decides to confront the family to learn the truth about his past.",
+      "The protagonist has a signature habit of chewing beedis and is known for his sharp, sarcastic banter.",
+      "Directed by Trivikram, this mass entertainer stars Mahesh Babu in Guntur, dancing to 'Kurchi Madathapetti'."
+    ]
+  },
+  {
+    "id": 51,
+    "title": "Lucky Baskhar",
+    "year": "2024",
+    "genre": "Thriller, Crime, Drama",
+    "actor": "Dulquer Salmaan",
+    "director": "Venky Atluri",
+    "overview": "A cash-strapped bank cashier embarks on a risky investment scheme and soon gets drawn into the murky world of money laundering.",
+    "popularity": 3.23,
+    "hints": [
+      "A struggling clerk faces constant humiliation at home and work due to his low income.",
+      "Desperate for money, he discovers a loophole in his workplace's daily operations to make quick profits.",
+      "His investments grow exponentially, drawing him into a massive national financial scandal.",
+      "Set against the backdrop of the late 80s and early 90s stock market boom in India.",
+      "Dulquer Salmaan plays the titular clever bank cashier who executes a high-risk money-laundering scheme."
+    ]
+  },
+  {
+    "id": 52,
+    "title": "Major",
+    "year": "2022",
+    "genre": "Action, History, Drama",
+    "actor": "Adivi Sesh",
+    "director": "Sashi Kiran Tikka",
+    "overview": "This biopic follows the life of Indian Army officer Major Sandeep Unnikrishnan, from his childhood to his heroic actions during the 2008 Mumbai attacks.",
+    "popularity": 2.45,
+    "hints": [
+      "A young man ignores his parents' safety concerns to follow his lifelong dream of serving his nation.",
+      "The film chronicles his journey from a spirited schoolboy to a highly trained elite commando officer.",
+      "The narrative reaches its peak during a high-stakes counter-terrorist operation inside a besieged luxury hotel.",
+      "He famously commands his teammates to stay back, choosing to face the threat alone to save civilian hostages.",
+      "Adivi Sesh portrays the real-life hero Major Sandeep Unnikrishnan during the 26/11 Mumbai attacks."
+    ]
+  },
+  {
+    "id": 53,
+    "title": "Liger",
+    "year": "2022",
+    "genre": "Action, Romance",
+    "actor": "Vijay Deverakonda",
+    "director": "Puri Jagannadh",
+    "overview": "The journey of Liger, from Karimnagar to Mumbai, from a nobody to a competitor, in his search for recognition while navigating his weaknesses, relationships, and love life.",
+    "popularity": 4.57,
+    "hints": [
+      "An ambitious fighter relocates to a metropolitan city with his hot-tempered mother to pursue his dreams.",
+      "He struggles with a speech impediment, which makes him the target of constant ridicule during press events.",
+      "His romantic distraction with a wealthy social media star leads to a devastating setback in his career.",
+      "The protagonist travels to the United States and faces a legendary real-world heavyweight boxer in the climax.",
+      "Directed by Puri Jagannadh, this MMA sports action film stars Vijay Deverakonda and features a cameo by Mike Tyson."
+    ]
+  },
+  {
+    "id": 54,
+    "title": "Saripodhaa Sanivaaram",
+    "year": "2024",
+    "genre": "Action, Thriller",
+    "actor": "Nani",
+    "director": "Vivek Athreya",
+    "overview": "Set in Sokulapalem, bound by a promise to his mother, Surya, an LIC agent leads a normal life on six days, maintains a careful ledger of everyone made him angry, unleashing his anger only on Saturdays, solely for justifiable reasons. A tragic incident pits him on a collision course with the ruthless and borderline-manic cop Daya.",
+    "popularity": 1.91,
+    "hints": [
+      "A child makes a solemn promise to his dying mother to control his intense anger.",
+      "As an adult, he lives a completely ordinary life, but maintains a secret ledger of people who cross him.",
+      "He allows himself to act on his accumulated rage and deliver justice only on one specific day of the week.",
+      "He goes head-to-head with a manic, abusive police officer who terrorizes an innocent local neighborhood.",
+      "Nani plays Surya, a hero who unleashes his physical rage strictly on Saturdays."
+    ]
+  },
+  {
+    "id": 55,
+    "title": "Tillu Square",
+    "year": "2024",
+    "genre": "Comedy, Romance",
+    "actor": "Siddhu Jonnalagadda",
+    "director": "Mallik Ram",
+    "overview": "The zany crime-comedy sequel to DJ Tillu, where DJ Tillu gets entangled with a mysterious woman, Lily.",
+    "popularity": 5.5,
+    "hints": [
+      "A highly confident, fast-talking young man gets infatuated with a woman he meets at a party.",
+      "She disappears the next day, only to return later with a shocking claim that forces him into a corner.",
+      "He gets dragged into a chaotic web of espionage, intelligence agencies, and international drug cartels.",
+      "The protagonist is known for his eccentric dressing style, curly hair, and non-stop funny monologues under stress.",
+      "The blockbuster comedy sequel to DJ Tillu, starring Siddhu Jonnalagadda and Anupama Parameswaran."
+    ]
+  },
+  {
+    "id": 56,
+    "title": "Dasara",
+    "year": "2023",
+    "genre": "Action, Drama",
+    "actor": "Nani",
+    "director": "Srikanth Odela",
+    "overview": "Dharani, a young man who steals coal from passing trains, rises to fight against the oppression of local landlords after his best friend is brutally murdered.",
+    "popularity": 4.2,
+    "hints": [
+      "The story unfolds in a dusty, rustic village built around a coal mine, where life revolves around a local bar.",
+      "A lifelong friendship between two men is tested when they both fall in love with the same local woman.",
+      "A brutal crime committed on a wedding night shatters the peace of the village, leaving the protagonist devastated.",
+      "The protagonist must overcome his deep fears and severe alcoholism to take revenge against a powerful local leader.",
+      "Nani stars as the rugged Dharani, carrying dual sickles in a coal-mine setting."
+    ]
+  },
+  {
+    "id": 57,
+    "title": "Sarileru Neekevvaru",
+    "year": "2020",
+    "genre": "Action, Comedy",
+    "actor": "Mahesh Babu",
+    "director": "Anil Ravipudi",
+    "overview": "A tough army major is deployed to Kurnool on a mission to keep the country safe from external threats.",
+    "popularity": 1.92,
+    "hints": [
+      "An army officer is tasked with visiting a town to safeguard the family of a fallen comrade.",
+      "He discovers that the family is being terrorized and blackmailed by a corrupt, powerful politician.",
+      "The officer decides to stay back and protect them, using clever mind games and physical combat to defeat the goons.",
+      "A long train journey in the film features a famous comedy track involving a hyperactive family and a recurring dialogue: 'Never before, never after'.",
+      "Mahesh Babu plays Major Ajay Krishna in this high-voltage commercial entertainer."
+    ]
+  },
+  {
+    "id": 58,
+    "title": "Radhe Shyam",
+    "year": "2022",
+    "genre": "Romance, Drama",
+    "actor": "Prabhas",
+    "director": "Radha Krishna Kumar",
+    "overview": "Vikramaditya, a world-renowned palmist, believes love does not exist in his stars, until he meets Prerana. But when destiny tries to pull them apart, will love prevail?",
+    "popularity": 2.96,
+    "hints": [
+      "A romantic drama set in 1970s Europe, exploring the conflict between predetermined fate and human love.",
+      "The protagonist is a mysterious man who is highly sought after by world leaders for his absolute predictions.",
+      "He falls in love with a young doctor, but is conflicted because he knows her tragic destiny.",
+      "A massive storm at sea serves as the backdrop for the final struggle to change what is written in the stars.",
+      "Prabhas plays the world-famous palmist Vikramaditya alongside Pooja Hegde."
+    ]
+  },
+  {
+    "id": 59,
+    "title": "Brochevarevarura",
+    "year": "2019",
+    "genre": "Comedy, Thriller, Crime",
+    "actor": "Sree Vishnu, Rahul Ramakrishna, Priyadarshi",
+    "director": "Vivek Athreya",
+    "overview": "Three lazy college students and their classmate Mithra plan a fake kidnapping to get money, but things get complicated when a real kidnapping takes place.",
+    "popularity": 3,
+    "hints": [
+      "Three lazy students who are struggling to pass their exams decide to help a classmate escape her strict father.",
+      "A parallel narrative tracks a young director trying to convince an actress to star in his debut film.",
+      "The students hatch a plan to stage a fake kidnapping to extract money from the girl's father.",
+      "The plan spirals out of control when a real gang of criminals enters the picture, causing a chaotic comedy of errors.",
+      "An acclaimed crime-comedy starring Sree Vishnu, Rahul Ramakrishna, and Priyadarshi as the 'R3 batch'."
+    ]
+  },
+  {
+    "id": 60,
+    "title": "Balagam",
+    "year": "2023",
+    "genre": "Family, Drama",
+    "actor": "Priyadarshi, Muralidhar Goud",
+    "director": "Venu Yeldandi",
+    "overview": "Following the sudden death of a family patriarch in a Telangana village, the family members clash over petty issues, affecting the traditional 11-day funeral rituals.",
+    "popularity": 3.5,
+    "hints": [
+      "A family drama set in a rural village that begins with the sudden demise of the family's grandfather.",
+      "The grandfather's death brings long-simmering financial disputes and ego clashes among his children to the surface.",
+      "A crucial village custom regarding a bird eating the food offering becomes the central conflict of the story.",
+      "The family is humiliated as the bird repeatedly refuses to touch the food, indicating unresolved family conflicts.",
+      "A critically acclaimed Telangana-based hit film directed by comedian Venu Yeldandi, centered on the funeral rituals."
+    ]
+  },
+  {
+    "id": 61,
+    "title": "Color Photo",
+    "year": "2020",
+    "genre": "Romance, Drama",
+    "actor": "Suhas, Chandini Chowdary",
+    "director": "Sandeep Raj",
+    "overview": "In the late 1990s in Machilipatnam, a dark-skinned boy from a poor farming background falls in love with his classmate, facing severe prejudice from her brother and society.",
+    "popularity": 2.8,
+    "hints": [
+      "A tragic love story set in the late 1990s, focusing on two engineering college students from different backgrounds.",
+      "The protagonist is a humble, dark-skinned boy from a rural background who secretly loves his classmate.",
+      "Their relationship faces violent opposition from the girl's brother, an arrogant police officer who represents societal prejudice.",
+      "The film is known for its beautiful music and its deep commentary on colorism and class discrimination.",
+      "A National Award-winning tear-jerker starring Suhas and Chandini Chowdary."
+    ]
+  },
+  {
+    "id": 62,
+    "title": "Cinema Bandi",
+    "year": "2021",
+    "genre": "Comedy, Drama",
+    "actor": "Vikas Vasistha, Sandeep Varanasi",
+    "director": "Praveen Kandregula",
+    "overview": "An auto driver in a remote village finds a high-end camera left behind in his auto and decides to make a feature film starring his fellow villagers, hoping to bring water and power to their village.",
+    "popularity": 2.5,
+    "hints": [
+      "A group of simple villagers find a piece of high-end technology mistakenly left behind in a local transport vehicle.",
+      "They decide to use the device to make a movie, hoping the profits can bring water and electricity to their village.",
+      "The crew is hilariously amateur, employing a wedding photographer and a local barber as their main talent.",
+      "They must complete the film before the actual owner of the equipment tracks them down.",
+      "An indie comedy carrying the memorable tagline: 'Everyone is a filmmaker at heart'."
+    ]
+  },
+  {
+    "id": 63,
+    "title": "Keedaa Cola",
+    "year": "2023",
+    "genre": "Comedy, Crime",
+    "actor": "Chaitanya Rao, Tharun Bhascker",
+    "director": "Tharun Bhascker",
+    "overview": "A group of eccentric misfits find a cockroach inside a soft drink bottle and decide to sue the beverage company for millions, leading to a chaotic clash with a local politician's gang.",
+    "popularity": 2.2,
+    "hints": [
+      "A group of broke, eccentric friends stumble upon a manufacturing defect in a commercial product.",
+      "They attempt to launch a lawsuit and blackmail the company to get a massive financial payout.",
+      "They get pursued by a local political aspirant and his hot-headed brother who want the product for themselves.",
+      "The film features a hilarious, wheelchair-bound grandfather who has a strong addiction to sweet carbonated drinks.",
+      "Directed by Tharun Bhascker, this zany crime-comedy revolves around a cockroach inside a soft drink bottle."
+    ]
+  },
+  {
+    "id": 64,
+    "title": "MAD",
+    "year": "2023",
+    "genre": "Comedy, Romance",
+    "actor": "Sangeeth Shobhan, Narne Nithin, Ram Nithin",
+    "director": "Kalyan Shankar",
+    "overview": "Set in an engineering college and revolves around the antics of the students there, primarily the boys, who get a kick out of torturing the hostel warden.",
+    "popularity": 1.57,
+    "hints": [
+      "A youthful comedy set in an engineering college hostel, focusing on the antics of three close roommates.",
+      "They spend their time playing practical jokes, fighting other departments, and making their warden's life miserable.",
+      "A major mystery in the story is a mysterious girl who keeps calling one of the boys, causing jealousy and confusion.",
+      "The movie became a sleeper hit due to its non-stop, fast-paced slapstick humor and college-life nostalgia.",
+      "A college comedy starring Sangeeth Shobhan, Narne Nithin, and Ram Nithin."
+    ]
+  },
+  {
+    "id": 65,
+    "title": "Mathu Vadalara 2",
+    "year": "2024",
+    "genre": "Comedy, Crime, Thriller",
+    "actor": "Sri Simha, Satya",
+    "director": "Ritesh Rana",
+    "overview": "The two main protagonists from the first part are now working as special agents in a crime-fighting task force, but get framed for murder again.",
+    "popularity": 3.8,
+    "hints": [
+      "Two former delivery boys have managed to get jobs in a special government investigation unit.",
+      "They run a side business of stealing bribe money from crime scenes, which eventually gets them into deep trouble.",
+      "They are framed for the murder of a popular internet celebrity and must flee from their own colleagues.",
+      "The film features a running parody of exaggerated Indian TV serial dramas that plays in the background.",
+      "The zany crime-comedy sequel starring Sri Simha and Satya as special agents in the 'HE' team."
+    ]
+  },
+  {
+    "id": 66,
+    "title": "Gaami",
+    "year": "2024",
+    "genre": "Adventure, Fantasy, Drama",
+    "actor": "Vishwak Sen, Chandini Chowdary",
+    "director": "Vidyadhar Kagita",
+    "overview": "Shankar, an Aghora suffering from a rare disease where he faints upon human touch, embanks on a quest to the Himalayas to find the mystical Malipatra leaves.",
+    "popularity": 2.4,
+    "hints": [
+      "The story follows a man with a rare physical condition that makes him collapse whenever he is touched.",
+      "He is cast out of his monastery and is told he can find a cure only in the far reaches of the Himalayas.",
+      "He must find a mythical plant that blooms once in 36 years on a remote, icy peak.",
+      "The film weaves three parallel stories: his journey, a secret laboratory doing human trials, and a prison escape.",
+      "Vishwak Sen plays the touch-phobic Aghora named Shankar in this epic adventure fantasy."
+    ]
+  },
+  {
+    "id": 67,
+    "title": "Yashoda",
+    "year": "2022",
+    "genre": "Thriller, Mystery, Drama",
+    "actor": "Samantha Ruth Prabhu",
+    "director": "Hari-Harish",
+    "overview": "Looking to save her sister, Yashoda, a desperate woman agrees to be a surrogate and move in to a plush facility - but nothing is as it seems.",
+    "popularity": 1.93,
+    "hints": [
+      "A woman from a poor family voluntarily registers at a high-end medical facility to earn money for her sister.",
+      "She starts noticing strange occurrences and realizes the patients are being kept under complete confinement.",
+      "A parallel track investigates the suspicious deaths of wealthy celebrities and models linked to a beauty treatment.",
+      "The climax reveals a horrific illegal trade involving surrogate mothers and corporate greed.",
+      "Samantha Ruth Prabhu stars as the pregnant protagonist who is secretly an undercover cop."
+    ]
+  },
+  {
+    "id": 68,
+    "title": "V",
+    "year": "2020",
+    "genre": "Action, Crime, Thriller",
+    "actor": "Nani, Sudheer Babu",
+    "director": "Mohana Krishna Indraganti",
+    "overview": "A celebrated cop faces his toughest challenge when a taunting serial killer begins targeting victims and leaving notes meant for him.",
+    "popularity": 1.59,
+    "hints": [
+      "A highly celebrated police officer receives a series of phone calls from a killer challenging him to a duel.",
+      "The killer target-kills specific individuals and leaves puzzle pieces and clues mocking the police.",
+      "The officer discovers that the victims were all involved in a past crime that destroyed a family.",
+      "The killer is revealed to be a former decorated officer seeking revenge for the murder of his wife.",
+      "This thriller stars Nani in his 25th film as the anti-hero, alongside Sudheer Babu."
+    ]
+  },
+  {
+    "id": 69,
+    "title": "Virupaksha",
+    "year": "2023",
+    "genre": "Horror, Mystery, Thriller",
+    "actor": "Sai Durgha Tej, Samyuktha Menon",
+    "director": "Karthik Dandu",
+    "overview": "Set in a village named Rudravanam in 1990's, Surya along with his mother, visit there after a long time. Suddenly a series of mysterious deaths occur due to an occult practice.",
+    "popularity": 1.98,
+    "hints": [
+      "A young man travels to a remote village, only to find the locals living in fear of a strange occult practice.",
+      "Following a tragedy, the village priests order a complete lockdown, banning anyone from entering or leaving.",
+      "A series of mysterious deaths occur whenever someone tries to cross the village border at night.",
+      "The protagonist must investigate the village's dark history to find the source of the curse before his lover dies.",
+      "A supernatural horror thriller set in the village of Rudravanam, starring Sai Durgha Tej."
+    ]
+  },
+  {
+    "id": 70,
+    "title": "Ante... Sundaraniki!",
+    "year": "2022",
+    "genre": "Comedy, Romance, Family",
+    "actor": "Nani, Nazriya Nazim",
+    "director": "Vivek Athreya",
+    "overview": "A man from a Brahmin family falls in love with a Christian girl. In order to convince their parents, they say contrasting lies which complicates the situation.",
+    "popularity": 2.27,
+    "hints": [
+      "A young man raised in an extremely conservative, Brahmin household falls in love with a Christian girl.",
+      "To convince their families, they cook up a web of lies, claiming the girl is pregnant and the boy has a medical issue.",
+      "The lies spin out of control, involving fake pregnancies, adoption schemes, and multiple family misunderstandings.",
+      "The protagonist's dream of traveling to the United States is constantly blocked by his family's superstitious rituals.",
+      "Nani and Nazriya Nazim star in this acclaimed romantic comedy centered around interfaith lies."
+    ]
+  },
+  {
+    "id": 71,
+    "title": "Shyam Singha Roy",
+    "year": "2021",
+    "genre": "Drama, Romance",
+    "actor": "Nani",
+    "director": "Rahul Sankrityan",
+    "overview": "An aspiring filmmaker is accused of plagiarizing the stories for his debut movie.",
+    "popularity": 0.98,
+    "hints": [
+      "An aspiring filmmaker is accused of plagiarizing the stories for his debut movie.",
+      "He is arrested, but during the trial, he begins experiencing flashes of a past life.",
+      "A flashback reveals his previous birth in West Bengal as a revolutionary writer fighting social evils.",
+      "The core plot involves his love for a traditional temple dancer whom he tries to rescue from oppression.",
+      "Nani plays a dual role as the modern-day director Vasu and the legendary Bengali writer Shyam Singha Roy."
+    ]
+  },
+  {
+    "id": 72,
+    "title": "Akhanda",
+    "year": "2021",
+    "genre": "Action, Drama",
+    "actor": "Nandamuri Balakrishna",
+    "director": "Boyapati Srinu",
+    "overview": "A family faces complete destruction from a ruthless mining lord backed by a fake spiritual guru.",
+    "popularity": 0.84,
+    "hints": [
+      "A family faces complete destruction from a ruthless mining lord backed by a fake spiritual guru.",
+      "When the protagonist's family is captured, an estranged brother returns from the wilderness to save them.",
+      "The savior is a fierce devotee of Lord Shiva who possesses superhuman strength and spiritual power.",
+      "The antagonist runs a massive illegal uranium mining racket disguised as a temple site.",
+      "Nandamuri Balakrishna plays a dual role, including the roaring, trident-wielding Aghora named Akhanda."
+    ]
+  },
+  {
+    "id": 73,
+    "title": "Sarkaru Vaari Paata",
+    "year": "2022",
+    "genre": "Action, Drama",
+    "actor": "Mahesh Babu",
+    "director": "Parasuram Petla",
+    "overview": "A finance agent in the US runs a strict debt collection agency, believing money must be returned with interest.",
+    "popularity": 1.34,
+    "hints": [
+      "A finance agent in the US runs a strict debt collection agency, believing money must be returned with interest.",
+      "He gets tricked by a woman who takes a loan from him under false pretenses to pay her college fees.",
+      "He travels to India to recover the debt from her father, a highly influential politician and industrialist.",
+      "The film addresses massive corporate bank fraud and the government's banking system loopholes.",
+      "Mahesh Babu plays Mahi, who delivers messages on financial responsibility and clashes with Rajendranath."
+    ]
+  },
+  {
+    "id": 74,
+    "title": "Waltair Veerayya",
+    "year": "2023",
+    "genre": "Action, Drama",
+    "actor": "Chiranjeevi",
+    "director": "Bobby Kolli",
+    "overview": "A notorious fisherman agrees to help a police officer kidnap a dangerous drug lord from another country.",
+    "popularity": 1.7,
+    "hints": [
+      "A notorious fisherman agrees to help a police officer kidnap a dangerous drug lord from another country.",
+      "He travels to Malaysia to execute the mission, but has a secret personal motive to confront the drug lord.",
+      "A flashback reveals the drug lord is responsible for the death of the protagonist's younger half-brother, an ACP.",
+      "The film features a special, high-energy cameo by another popular hero playing an ACP who loves ACP-style dialogues.",
+      "Chiranjeevi plays the titular lungi-clad protagonist alongside Ravi Teja in this action blockbuster."
+    ]
+  },
+  {
+    "id": 75,
+    "title": "HIT: The First Case",
+    "year": "2020",
+    "genre": "Crime, Thriller",
+    "actor": "Vishwak Sen",
+    "director": "Sailesh Kolanu",
+    "overview": "A brilliant detective in a homicide unit struggles with severe PTSD and panic attacks from a past tragedy.",
+    "popularity": 1.54,
+    "hints": [
+      "A brilliant detective in a homicide unit struggles with severe PTSD and panic attacks from a past tragedy.",
+      "He is forced to cut his medical leave short when a college girl goes missing on a highway under mysterious circumstances.",
+      "The case becomes personal when his own girlfriend, a forensic scientist, also goes missing shortly after.",
+      "The investigation centers around a blue car, forensic spray clues, and a hidden family secret.",
+      "Vishwak Sen plays the troubled detective Vikram in this first installment of the HIT universe."
+    ]
+  },
+  {
+    "id": 76,
+    "title": "HIT: The 2nd Case",
+    "year": "2022",
+    "genre": "Crime, Thriller",
+    "actor": "Adivi Sesh",
+    "director": "Sailesh Kolanu",
+    "overview": "A laid-back, sarcastic police officer in Vizag believes that criminals are dumb and easy to catch.",
+    "popularity": 1.9,
+    "hints": [
+      "A laid-back, sarcastic police officer in Vizag believes that criminals are dumb and easy to catch.",
+      "His attitude changes when a gruesome murder of a girl in a pub reveals a serial killer is on the loose.",
+      "The killer leaves a trail of dismembered body parts, targeting women and mocking the police department.",
+      "A key clue involves dental records, a tooth-whitening chemical, and a local orphanage.",
+      "Adivi Sesh plays the sharp detective KD (Krishna Dev) who solves the grisly serial killer case."
+    ]
+  },
+  {
+    "id": 77,
+    "title": "Mangalavaaram",
+    "year": "2023",
+    "genre": "Mystery, Thriller",
+    "actor": "Payal Rajput",
+    "director": "Ajay Bhupathi",
+    "overview": "Set in the 1990s, a remote village is gripped by terror due to a series of mysterious, public deaths.",
+    "popularity": 0.9,
+    "hints": [
+      "Set in the 1990s, a remote village is gripped by terror due to a series of mysterious, public deaths.",
+      "The deaths are preceded by graffiti on the walls of houses, exposing illicit affairs in the village.",
+      "All the deaths occur strictly on one specific day of the week, leading villagers to believe it is a divine curse.",
+      "The protagonist is a young woman who returns to the village and is driven to madness by her dark secrets.",
+      "A rustic horror thriller directed by Ajay Bhupathi, centered on deaths occurring on Tuesdays."
+    ]
+  },
+  {
+    "id": 78,
+    "title": "Vakeel Saab",
+    "year": "2021",
+    "genre": "Drama, Action",
+    "actor": "Pawan Kalyan",
+    "director": "Venu Sriram",
+    "overview": "Three working women in Hyderabad find their lives in jeopardy after a narrow escape from a sexual assault attempt.",
+    "popularity": 0.94,
+    "hints": [
+      "Three working women in Hyderabad find their lives in jeopardy after a narrow escape from a sexual assault attempt.",
+      "They are falsely accused of prostitution and attempt to murder by a group of influential, wealthy men.",
+      "A reclusive lawyer who retired due to a personal tragedy decides to take up their case in court.",
+      "The lawyer argues fiercely on the concept of consent and the double standards of society towards women.",
+      "Pawan Kalyan stars in this courtroom drama, which is a remake of the Bollywood film 'Pink'."
+    ]
+  },
+  {
+    "id": 79,
+    "title": "Maestro",
+    "year": "2021",
+    "genre": "Crime, Thriller, Comedy",
+    "actor": "Nithiin",
+    "director": "Merlapaka Gandhi",
+    "overview": "A talented piano player pretends to be blind to improve his focus and artistic expression.",
+    "popularity": 0.9,
+    "hints": [
+      "A talented piano player pretends to be blind to improve his focus and artistic expression.",
+      "He gets invited to play a private concert at a former movie star's house, only to witness a murder.",
+      "He must continue his blind act in front of the police and the killer's wife to save his own life.",
+      "He gets kidnapped, temporarily blinded in reality, and embroiled in an illegal organ harvesting racket.",
+      "Nithiin, Nabha Natesh, and Tamannaah star in this dark comedy thriller remaking 'Andhadhun'."
+    ]
+  },
+  {
+    "id": 80,
+    "title": "The Family Star",
+    "year": "2024",
+    "genre": "Drama, Romance",
+    "actor": "Vijay Deverakonda",
+    "director": "Parasuram Petla",
+    "overview": "A hardworking middle-class man takes complete financial responsibility for his large extended family.",
+    "popularity": 2.97,
+    "hints": [
+      "A hardworking middle-class man takes complete financial responsibility for his large extended family.",
+      "He falls in love with a female tenant who is staying at his house to conduct a research study.",
+      "He is devastated to discover that her research book depicts his family as a burden, leading to a breakup.",
+      "He relocates to the US for a corporate job, where she joins him as his boss, forcing them to resolve their differences.",
+      "Vijay Deverakonda and Mrunal Thakur star in this family romantic drama."
+    ]
+  },
+  {
+    "id": 81,
+    "title": "F3: Fun and Frustration",
+    "year": "2022",
+    "genre": "Comedy, Family",
+    "actor": "Venkatesh, Varun Tej",
+    "director": "Anil Ravipudi",
+    "overview": "A group of financially struggling, greedy men team up to extract money from a wealthy businessman.",
+    "popularity": 0.88,
+    "hints": [
+      "A group of financially struggling, greedy men team up to extract money from a wealthy businessman.",
+      "One protagonist has a night blindness issue, and the other struggles with a severe stutter under stress.",
+      "They pretend to be the long-lost heirs of a toy manufacturing billionaire to claim his wealth.",
+      "The second half features a hilarious sequence where they pose as a film crew to scam local villagers.",
+      "Venkatesh and Varun Tej return in this comedy sequel centered on the theme of money."
+    ]
+  },
+  {
+    "id": 82,
+    "title": "GodFather",
+    "year": "2022",
+    "genre": "Action, Thriller, Drama",
+    "actor": "Chiranjeevi",
+    "director": "Mohan Raja",
+    "overview": "The sudden demise of a state's chief minister triggers a massive power struggle within the political party.",
+    "popularity": 0.89,
+    "hints": [
+      "The sudden demise of a state's chief minister triggers a massive power struggle within the political party.",
+      "A mysterious, powerful kingmaker emerges from exile to protect the minister's daughter and clean up the party.",
+      "He clashes with his sister's corrupt husband, who is plotting to seize the CM seat using international drug funds.",
+      "The film features a high-octane prison escape sequence and a special action cameo by a Bollywood superstar.",
+      "Chiranjeevi plays Brahma/GodFather in this political action thriller remaking the Malayalam film 'Lucifer'."
+    ]
+  },
+  {
+    "id": 83,
+    "title": "Vimanam",
+    "year": "2023",
+    "genre": "Drama, Family",
+    "actor": "Samuthirakani",
+    "director": "Siva Prasad Yanala",
+    "overview": "A disabled, middle-aged single father works as a community toilet attendant in a city slum.",
+    "popularity": 0.91,
+    "hints": [
+      "A disabled, middle-aged single father works as a community toilet attendant in a city slum.",
+      "His young son is obsessed with airplanes and dreams of flying in one at least once.",
+      "The father's life is shattered when he learns his son has a terminal illness with only a few days to live.",
+      "He goes to extreme lengths, begging and doing odd jobs, to collect money to buy a flight ticket for his son.",
+      "A deeply emotional and acclaimed drama starring Samuthirakani and Master Dhruvan."
+    ]
+  },
+  {
+    "id": 84,
+    "title": "Bhoothaddam Bhaskar Narayana",
+    "year": "2024",
+    "genre": "Mystery, Thriller",
+    "actor": "Shiva Kandukuri",
+    "director": "Purushottam Raaj",
+    "overview": "A quirky detective operating on the border is hired to solve a series of decapitation murders.",
+    "popularity": 1.09,
+    "hints": [
+      "A quirky detective operating on the border is hired to solve a series of decapitation murders.",
+      "The serial killer leaves the victims' bodies in local forests, substituting their heads with a cardboard box.",
+      "The detective discovers a shocking connection between the modern murders and a mythological tale of a local demon.",
+      "The mystery involves a 16-year cycle of ritualistic killings linked to a rare astronomical event.",
+      "Shiva Kandukuri plays the detective Bhaskar Narayana in this mythological mystery thriller."
+    ]
+  },
+  {
+    "id": 85,
+    "title": "Ooru Peru Bhairavakona",
+    "year": "2024",
+    "genre": "Fantasy, Thriller",
+    "actor": "Sundeep Kishan",
+    "director": "Vi Anand",
+    "overview": "A stuntman who robs wedding jewelry to help a friend in need escapes into a mysterious forest.",
+    "popularity": 0.93,
+    "hints": [
+      "A stuntman who robs wedding jewelry to help a friend in need escapes into a mysterious forest.",
+      "He and his partner arrive in a strange, isolated village that seems completely frozen in time.",
+      "He slowly realizes that the village is actually a gateway to the spirit world, and the residents are dead souls.",
+      "He must find a set of missing holy scriptures to escape the village and save his love.",
+      "Sundeep Kishan stars in this fantasy adventure thriller directed by Vi Anand."
+    ]
+  },
+  {
+    "id": 86,
+    "title": "Saaho",
+    "year": "2019",
+    "genre": "Action, Thriller, Sci-Fi",
+    "actor": "Prabhas",
+    "director": "Sujeeth",
+    "overview": "A high-stakes conflict erupts between powerful crime families in a futuristic city-state over a hidden treasure.",
+    "popularity": 2.95,
+    "hints": [
+      "A high-stakes conflict erupts between powerful crime families in a futuristic city-state over a hidden treasure.",
+      "An undercover officer is assigned to investigate a massive theft worth billions, leading him to infiltrate the criminal underworld.",
+      "A critical puzzle piece is a high-tech black box containing the keys to a vault filled with gold.",
+      "The climax features intense desert pursuits, jet-pack operations, and high-altitude combat.",
+      "Prabhas plays Ashok/Saaho in this massive action spectacle alongside Shraddha Kapoor."
+    ]
+  },
+  {
+    "id": 87,
+    "title": "Dear Comrade",
+    "year": "2019",
+    "genre": "Romance, Drama",
+    "actor": "Vijay Deverakonda",
+    "director": "Bharat Kamma",
+    "overview": "A story of intense love, political conflicts in student unions, and fighting for one's passion.",
+    "popularity": 1.82,
+    "hints": [
+      "A story of intense love, political conflicts in student unions, and fighting for one's passion.",
+      "The protagonist is a hot-tempered student leader who clashes with local politicians to protect his friends.",
+      "He falls in love with a state-level cricketer, but his anger issues create a deep rift between them.",
+      "Years later, he helps her fight against sexual harassment in the sports federation, supporting her comeback.",
+      "Vijay Deverakonda and Rashmika Mandanna star in this romantic drama about being a 'comrade' in life."
+    ]
+  },
+  {
+    "id": 88,
+    "title": "F2: Fun and Frustration",
+    "year": "2019",
+    "genre": "Comedy, Family",
+    "actor": "Venkatesh, Varun Tej",
+    "director": "Anil Ravipudi",
+    "overview": "Two married men become highly frustrated with the controlling behavior of their respective wives.",
+    "popularity": 1.82,
+    "hints": [
+      "Two married men become highly frustrated with the controlling behavior of their respective wives.",
+      "To escape their marital troubles, they run away to Europe, only to get chased by their wives and families.",
+      "They get embroiled in a local landlord's household problems in Europe, trying to teach him about marital harmony.",
+      "The movie is known for the signature hand gesture and catchphrase 'Anthega Anthega' used by the lead actor.",
+      "Venkatesh and Varun Tej star as co-brother-in-laws in this blockbuster comedy entertainer."
+    ]
+  },
+  {
+    "id": 89,
+    "title": "Maharshi",
+    "year": "2019",
+    "genre": "Drama, Action",
+    "actor": "Mahesh Babu",
+    "director": "Vamshi Paidipally",
+    "overview": "A highly ambitious college student goes on to become a global tech CEO in the United States.",
+    "popularity": 1.73,
+    "hints": [
+      "A highly ambitious college student goes on to become a global tech CEO in the United States.",
+      "He returns to India after learning that his college best friend has sacrificed his freedom to protect him from a corporate rival.",
+      "The protagonist travels to a remote village in Andhra Pradesh to help his friend and ends up practicing farming.",
+      "He initiates a social movement called 'weekend agriculture' to encourage city youngsters to support farmers.",
+      "Mahesh Babu plays Rishi Kumar, who learns that success is not a destination but a journey, in his milestone 25th film."
+    ]
+  },
+  {
+    "id": 90,
+    "title": "Businessman",
+    "year": "2012",
+    "genre": "Action, Crime",
+    "actor": "Mahesh Babu",
+    "director": "Puri Jagannadh",
+    "overview": "An ambitious young man arrives in a major metropolitan city with a plan to become the ultimate don.",
+    "popularity": 1.76,
+    "hints": [
+      "An ambitious young man arrives in a major metropolitan city with a plan to become the ultimate don.",
+      "He exploits the local politicians and the police to build a massive, systematic crime syndicate.",
+      "He establishes a parallel bank and recruits thousands of unemployed youth to run a corporate-style mafia.",
+      "He seeks revenge for the murder of his parents, who were killed by a powerful national politician.",
+      "Mahesh Babu plays the ruthless and sharp Surya Bhai alongside Kajal Aggarwal in this Puri Jagannadh hit."
+    ]
+  },
+  {
+    "id": 91,
+    "title": "Aravinda Sametha Veera Raghava",
+    "year": "2018",
+    "genre": "Action, Drama",
+    "actor": "NTR Jr",
+    "director": "Trivikram Srinivas",
+    "overview": "A young man returns from London to his native region and finds his family locked in a generations-old blood feud.",
+    "popularity": 1.67,
+    "hints": [
+      "A young man returns from London to his native region and finds his family locked in a generations-old blood feud.",
+      "After his father is killed in an ambush, he decides to break the cycle of violence through peace rather than revenge.",
+      "He moves to the city and stays at the house of a girl to learn about the perspective of women in warring households.",
+      "The story highlights the futility of factional violence in Rayalaseema and the strength of reconciliation.",
+      "NTR Jr. plays Veera Raghava alongside Pooja Hegde in this emotional action drama directed by Trivikram."
+    ]
+  },
+  {
+    "id": 92,
+    "title": "DJ: Duvvada Jagannadham",
+    "year": "2017",
+    "genre": "Action, Comedy",
+    "actor": "Allu Arjun",
+    "director": "Harish Shankar",
+    "overview": "A traditional, vegetarian cook in Vijayawada runs a secret life as a high-profile vigilante.",
+    "popularity": 1.45,
+    "hints": [
+      "A traditional, vegetarian cook in Vijayawada runs a secret life as a high-profile vigilante.",
+      "He eliminates corrupt criminals who escape the law, operating with the help of an honest police officer.",
+      "He falls in love with a wealthy girl during a wedding, posing as a simple priest/cook.",
+      "He takes on a powerful real estate mogul who has scammed thousands of middle-class families.",
+      "Allu Arjun plays the dual roles of Duvvada Jagannadham and DJ in this high-energy mass film."
+    ]
+  },
+  {
+    "id": 93,
+    "title": "Oh! Baby",
+    "year": "2019",
+    "genre": "Fantasy, Comedy",
+    "actor": "Samantha Ruth Prabhu",
+    "director": "B. V. Nandini Reddy",
+    "overview": "An elderly woman who feels she is a burden to her family gets a second chance at life.",
+    "popularity": 1.37,
+    "hints": [
+      "An elderly woman who feels she is a burden to her family gets a second chance at life.",
+      "After getting her picture taken at a mysterious photo studio, she turns back into a 24-year-old girl.",
+      "She joins her grandson's music band as the lead singer, using her youthful voice and old-school charm.",
+      "She faces a dilemma: she must choose between living her dream youth or returning to her actual age to save her grandson.",
+      "Samantha Ruth Prabhu plays the young avatar of Baby in this remake of the Korean film 'Miss Granny'."
+    ]
+  },
+  {
+    "id": 94,
+    "title": "Vedam",
+    "year": "2010",
+    "genre": "Drama, Anthology",
+    "actor": "Allu Arjun, Anushka Shetty",
+    "director": "Krish Jagarlamudi",
+    "overview": "The lives of five completely different individuals from various social strata intersect on a single night.",
+    "popularity": 1.37,
+    "hints": [
+      "The lives of five completely different individuals from various social strata intersect on a single night.",
+      "The characters include a cable operator, a commercial sex worker, a rock musician, a debt-ridden weaver, and an old Muslim man.",
+      "They all end up at a city hospital where a sudden terrorist crisis takes place.",
+      "The characters show extreme bravery and selflessness, sacrificing their lives to save others in the hospital.",
+      "An acclaimed multi-starrer anthological drama starring Allu Arjun, Anushka Shetty, and Manoj Manchu."
+    ]
+  },
+  {
+    "id": 95,
+    "title": "Naa Peru Surya - Naa Illu India",
+    "year": "2018",
+    "genre": "Action, Drama",
+    "actor": "Allu Arjun",
+    "director": "Vakkantham Vamsi",
+    "overview": "A highly skilled military soldier is suspended from the army due to his extreme anger issues.",
+    "popularity": 1.27,
+    "hints": [
+      "A highly skilled military soldier is suspended from the army due to his extreme anger issues.",
+      "To get reinstated, he must obtain a signature of approval from his estranged father, a renowned psychologist.",
+      "He is challenged to control his anger for 21 days while living in his hometown.",
+      "He is forced to confront local goons who are terrorizing a local family, testing his self-control.",
+      "Allu Arjun plays the hot-headed soldier Surya in this patriotic action drama."
+    ]
+  },
+  {
+    "id": 96,
+    "title": "Sye Raa Narasimha Reddy",
+    "year": "2019",
+    "genre": "Historical, Action",
+    "actor": "Chiranjeevi",
+    "director": "Surender Reddy",
+    "overview": "An epic historical film depicting the first rebellion against the British East India Company in India.",
+    "popularity": 1.22,
+    "hints": [
+      "An epic historical film depicting the first rebellion against the British East India Company in India.",
+      "The protagonist is a local chieftain who unites multiple regional rulers to fight the foreign occupiers.",
+      "He leads a guerrilla war in the hills and forests, inflicting heavy losses on the British forces.",
+      "He is eventually captured due to betrayal and is sentenced to death, inspiring the freedom struggle.",
+      "Chiranjeevi plays the legendary freedom fighter Uyyalawada Narasimha Reddy in this high-budget epic."
+    ]
+  },
+  {
+    "id": 97,
+    "title": "1: Nenokkadine",
+    "year": "2014",
+    "genre": "Thriller, Psychological, Action",
+    "actor": "Mahesh Babu",
+    "director": "Sukumar",
+    "overview": "A popular rock star suffers from integration disorder, which makes it hard for him to distinguish reality from imagination.",
+    "popularity": 1.19,
+    "hints": [
+      "A popular rock star suffers from integration disorder, which makes it hard for him to distinguish reality from imagination.",
+      "He is haunted by childhood memories of three men who brutally murdered his parents.",
+      "He goes on a quest to find them, but the police and media believe he is chasing ghosts.",
+      "The investigation takes him to London and Belfast, uncovering a conspiracy related to high-yield golden rice seeds.",
+      "Mahesh Babu stars as Gautham in this pathbreaking, cult psychological action thriller directed by Sukumar."
+    ]
+  },
+  {
+    "id": 98,
+    "title": "Nene Raju Nene Mantri",
+    "year": "2017",
+    "genre": "Political, Drama",
+    "actor": "Rana Daggubati",
+    "director": "Teja",
+    "overview": "A simple money lender enters local politics to seek revenge against a corrupt sarpanch who insulted his wife.",
+    "popularity": 1.17,
+    "hints": [
+      "A simple money lender enters local politics to seek revenge against a corrupt sarpanch who insulted his wife.",
+      "His rapid rise in politics turns him into a ruthless, power-hungry politician who aims for the Chief Minister's seat.",
+      "He is willing to sacrifice rules and compromise his morals, which creates a rift with his highly ethical wife.",
+      "In the end, he realizes his greed has cost him the only person he loved, leading to a dramatic self-sacrifice.",
+      "Rana Daggubati plays Jogendra in this intense political drama alongside Kajal Aggarwal."
+    ]
+  },
+  {
+    "id": 99,
+    "title": "Nani's Gang Leader",
+    "year": "2019",
+    "genre": "Comedy, Crime",
+    "actor": "Nani",
+    "director": "Vikram Kumar",
+    "overview": "Five women of different age groups seek revenge for the murder of their loved ones in a bank robbery.",
+    "popularity": 1.15,
+    "hints": [
+      "Five women of different age groups seek revenge for the murder of their loved ones in a bank robbery.",
+      "They hire a small-time, amateur crime novelist who copies plots from Hollywood movies to help them.",
+      "They form a group to track down the bank robber, who is a famous racing driver using the stolen money.",
+      "The novelist tries to act like a mastermind, but gets into hilarious and chaotic situations during the investigation.",
+      "Nani plays Pencil Parthasarathy, the leader of the revenge gang, alongside Priyanka Arul Mohan."
+    ]
+  },
+  {
+    "id": 100,
+    "title": "Oopiri",
+    "year": "2016",
+    "genre": "Comedy, Drama",
+    "actor": "Nagarjuna Akkineni, Karthi",
+    "director": "Vamshi Paidipally",
+    "overview": "A wealthy, quadriplegic billionaire lives a depressed life in a mansion in Hyderabad.",
+    "popularity": 1.1,
+    "hints": [
+      "A wealthy, quadriplegic billionaire lives a depressed life in a mansion in Hyderabad.",
+      "He hires a carefree, ex-convict on parole as his personal caretaker because he appreciates his lack of pity.",
+      "The two form an unlikely, deep friendship, helping each other resolve personal family issues and find love.",
+      "The film is a beautiful exploration of disabled life, family bonds, and art, featuring a trip to Paris.",
+      "Nagarjuna Akkineni and Karthi star in this heartwarming adaptation of the French film 'The Intouchables'."
+    ]
+  },
+  {
+    "id": 101,
+    "title": "Son of Satyamurthy",
+    "year": "2015",
+    "genre": "Drama, Family",
+    "actor": "Allu Arjun",
+    "director": "Trivikram Srinivas",
+    "overview": "A rich businessman's son is left penniless after his father dies in a car accident, leaving massive debts.",
+    "popularity": 1.07,
+    "hints": [
+      "A rich businessman's son is left penniless after his father dies in a car accident, leaving massive debts.",
+      "Instead of declaring bankruptcy, he chooses to pay off all debts to protect his father's values and respect.",
+      "He travels to a village to secure a land agreement from a hot-tempered landlord to finalize a wedding deal.",
+      "He stays at the landlord's house, managing his family conflicts and proving his integrity.",
+      "Allu Arjun, Samantha, and Upendra star in this family drama directed by Trivikram Srinivas."
+    ]
+  },
+  {
+    "id": 102,
+    "title": "The Ghazi Attack",
+    "year": "2017",
+    "genre": "War, Drama, Thriller",
+    "actor": "Rana Daggubati",
+    "director": "Sankalp Reddy",
+    "overview": "A war film based on the mysterious sinking of a Pakistani submarine during the Indo-Pakistani War of 1971.",
+    "popularity": 1.02,
+    "hints": [
+      "A war film based on the mysterious sinking of a Pakistani submarine during the Indo-Pakistani War of 1971.",
+      "The story unfolds entirely inside an Indian Navy submarine patrolling the Bay of Bengal.",
+      "The crew must engage in a high-stakes, underwater battle of wits and survival against a hidden enemy submarine.",
+      "They face extreme challenges, including water leaks, battery failures, and navigating without sonar.",
+      "Rana Daggubati plays Lieutenant Commander Arjun Verma in this National Award-winning submarine thriller."
+    ]
+  },
+  {
+    "id": 103,
+    "title": "Sarrainodu",
+    "year": "2016",
+    "genre": "Action, Masala",
+    "actor": "Allu Arjun",
+    "director": "Boyapati Srinu",
+    "overview": "An ex-military officer spends his days punishing criminals who escape the legal system.",
+    "popularity": 1,
+    "hints": [
+      "An ex-military officer spends his days punishing criminals who escape the legal system.",
+      "He falls in love with a traditional girl, but is drawn into a conflict involving a corrupt Chief Minister's son.",
+      "The villain is a cruel, egoistic landlord who ruthlessly kills anyone who opposes him.",
+      "The hero must protect a village and the daughter of an honest official from the politician's goons.",
+      "Allu Arjun stars as Gana in this massive blockbuster action film directed by Boyapati Srinu."
+    ]
+  },
+  {
+    "id": 104,
+    "title": "Evaru",
+    "year": "2019",
+    "genre": "Mystery, Thriller",
+    "actor": "Adivi Sesh, Regina Cassandra",
+    "director": "Venkat Ramji",
+    "overview": "A wealthy woman is accused of murdering a high-ranking police officer who allegedly raped her.",
+    "popularity": 2.34,
+    "hints": [
+      "A wealthy woman is accused of murdering a high-ranking police officer who allegedly raped her.",
+      "She hires a corrupt police officer to help her build a defense case and escape the trial.",
+      "As they review the events of that night, they uncover a web of lies, blackmails, and a parallel hit-and-run case.",
+      "The movie features a series of mind-bending twists about who actually orchestrated the murder.",
+      "Adivi Sesh and Regina Cassandra star in this highly acclaimed mystery thriller based on 'The Invisible Guest'."
+    ]
+  },
+  {
+    "id": 105,
+    "title": "Hello!",
+    "year": "2017",
+    "genre": "Romance, Action",
+    "actor": "Akhil Akkineni",
+    "director": "Vikram Kumar",
+    "overview": "Two childhood soulmates are separated in their youth, promising to find each other through a specific phone call.",
+    "popularity": 3.57,
+    "hints": [
+      "Two childhood soulmates are separated in their youth, promising to find each other through a specific phone call.",
+      "Years later, the protagonist spends a hectic day chasing a phone thief who has stolen the phone containing her number.",
+      "The story is told in a single day, filled with spectacular parkour chases and romantic flashbacks.",
+      "The signature tune of their childhood is played on a violin, serving as their key connection.",
+      "Akhil Akkineni and Kalyani Priyadarshan star in this romantic action film directed by Vikram Kumar."
+    ]
+  },
+  {
+    "id": 106,
+    "title": "Khaleja",
+    "year": "2010",
+    "genre": "Action, Comedy",
+    "actor": "Mahesh Babu",
+    "director": "Trivikram Srinivas",
+    "overview": "A remote village is struck by a mysterious epidemic, and a local priest predicts a savior will come to protect them.",
+    "popularity": 0.95,
+    "hints": [
+      "A remote village is struck by a mysterious epidemic, and a local priest predicts a savior will come to protect them.",
+      "A talkative, sarcastic cab driver from the city travels to Rajasthan and gets caught in a series of accidents.",
+      "His journey leads him to the village, where the superstitious residents declare him to be a demigod.",
+      "He must fight a ruthless corporate tycoon who is secretly poisoning the village's water supply to mine plastic-grade silica.",
+      "Mahesh Babu plays the cab driver Raju alongside Anushka Shetty in this Trivikram cult comedy-action film."
+    ]
+  },
+  {
+    "id": 107,
+    "title": "Seethamma Vakitlo Sirimalle Chettu",
+    "year": "2013",
+    "genre": "Family, Drama",
+    "actor": "Venkatesh, Mahesh Babu",
+    "director": "Srikanth Addala",
+    "overview": "A family drama depicting the relationship between two brothers with contrasting personalities in a small town.",
+    "popularity": 0.89,
+    "hints": [
+      "A family drama depicting the relationship between two brothers with contrasting personalities in a small town.",
+      "The older brother is unemployed and hot-tempered, while the younger brother is easygoing and charming.",
+      "The brothers clash over family values, financial success, and their relatives' constant taunts.",
+      "The story reaches an emotional peak during a family wedding where they resolve their differences and unite the relatives.",
+      "A landmark multi-starrer featuring Venkatesh as Peddodu and Mahesh Babu as Chinnodu."
+    ]
+  },
+  {
+    "id": 108,
+    "title": "A Aa",
+    "year": "2016",
+    "genre": "Romance, Comedy",
+    "actor": "Nithiin, Samantha Ruth Prabhu",
+    "director": "Trivikram Srinivas",
+    "overview": "A wealthy, sheltered girl escapes her mother's strict control and visits her aunt's village.",
+    "popularity": 0.87,
+    "hints": [
+      "A wealthy, sheltered girl escapes her mother's strict control and visits her aunt's village.",
+      "She falls in love with her cousin, a simple, hardworking young man who runs a local business.",
+      "Their relationship is complicated by old family rivalries and the cousin's commitment to marry another girl.",
+      "The protagonist's mother arranges a marriage for her with a wealthy, arrogant NRI, forcing a confrontation.",
+      "Nithiin and Samantha star as Anand and Anasuya in this romantic comedy directed by Trivikram."
+    ]
+  },
+  {
+    "id": 109,
+    "title": "Darling",
+    "year": "2010",
+    "genre": "Romance, Comedy",
+    "actor": "Prabhas",
+    "director": "A. Karunakaran",
+    "overview": "The protagonist reunites with his childhood friends at a massive reunion party organized by their fathers.",
+    "popularity": 0.86,
+    "hints": [
+      "The protagonist reunites with his childhood friends at a massive reunion party organized by their fathers.",
+      "To escape a forced marriage with a local gangster's daughter, he cooks up a fake love story about his life in Switzerland.",
+      "His childhood love interest arrives at the party, unaware of the fake story he has told everyone.",
+      "The film features highly popular romantic songs and a comedy track set during a father-son reunion.",
+      "Prabhas plays Prabha alongside Kajal Aggarwal in this beloved romantic comedy directed by A. Karunakaran."
+    ]
+  },
+  {
+    "id": 110,
+    "title": "Yevadu",
+    "year": "2014",
+    "genre": "Action, Thriller",
+    "actor": "Ram Charan",
+    "director": "Vamshi Paidipally",
+    "overview": "A young man gets severely burnt and loses his lover in a brutal attack by a local mafia don.",
+    "popularity": 0.86,
+    "hints": [
+      "A young man gets severely burnt and loses his lover in a brutal attack by a local mafia don.",
+      "A plastic surgeon saves him by giving him a completely new face and identity.",
+      "He uses his new look to infiltrate the don't gang and take revenge, but gets targeted by another gang who recognizes his face.",
+      "He discovers that the face belongs to a deceased student leader who fought against a corporate goon in Hyderabad.",
+      "Ram Charan stars in this action thriller, with a crucial cameo by Allu Arjun as the original character."
+    ]
+  },
+  {
+    "id": 111,
+    "title": "Mr. Perfect",
+    "year": "2011",
+    "genre": "Romance, Drama",
+    "actor": "Prabhas",
+    "director": "Dasaradh",
+    "overview": "An uncompromising software engineer believes in living life entirely on his own terms without making compromises.",
+    "popularity": 0.85,
+    "hints": [
+      "An uncompromising software engineer believes in living life entirely on his own terms without making compromises.",
+      "He rejects a childhood friend because he feels her compromises will ruin their relationship.",
+      "He travels to a foreign country and falls in love with an independent woman who matches his personality.",
+      "He is forced to re-evaluate his philosophy of life when he realizes the value of compromise in family relationships.",
+      "Prabhas plays Vicky alongside Kajal Aggarwal and Taapsee Pannu in this romantic family drama."
+    ]
+  },
+  {
+    "id": 112,
+    "title": "Veera Simha Reddy",
+    "year": "2023",
+    "genre": "Action, Drama",
+    "actor": "Nandamuri Balakrishna",
+    "director": "Gopichand Malineni",
+    "overview": "A mother and son live a quiet life running a restaurant in Turkey, keeping the father's identity a secret.",
+    "popularity": 0.81,
+    "hints": [
+      "A mother and son live a quiet life running a restaurant in Turkey, keeping the father's identity a secret.",
+      "The son discovers his father is a highly respected, powerful leader in a faction-ridden region of Andhra Pradesh.",
+      "The father is drawn into a deadly trap by his own half-sister, who seeks vengeance for past family grievances.",
+      "The son returns to his native land to avenge his father's murder and restore peace to the faction-torn area.",
+      "Nandamuri Balakrishna plays a dual role as father and son in this high-voltage mass action film."
+    ]
+  },
+  {
+    "id": 113,
+    "title": "Temper",
+    "year": "2015",
+    "genre": "Action, Crime, Drama",
+    "actor": "NTR Jr",
+    "director": "Puri Jagannadh",
+    "overview": "A corrupt, money-minded police officer is transferred to a coastal city where he partners with local criminals.",
+    "popularity": 0.79,
+    "hints": [
+      "A corrupt, money-minded police officer is transferred to a coastal city where he partners with local criminals.",
+      "His attitude changes completely after a girl who treated him like a brother is kidnapped and assaulted by his associates.",
+      "He turns against his criminal partners, launching a fierce, unilateral fight to ensure the victims get justice.",
+      "The climax features a dramatic courtroom trial where he goes to extreme lengths to secure a death penalty for the culprits.",
+      "NTR Jr. plays the aggressive cop Daya alongside Kajal Aggarwal in this action drama directed by Puri Jagannadh."
+    ]
+  },
+  {
+    "id": 114,
+    "title": "Maryada Ramanna",
+    "year": "2010",
+    "genre": "Comedy, Thriller",
+    "actor": "Sunil Varma",
+    "director": "S. S. Rajamouli",
+    "overview": "A poor, simple man travels to his native village to sell a small piece of land he inherited from his parents.",
+    "popularity": 0.77,
+    "hints": [
+      "A poor, simple man travels to his native village to sell a small piece of land he inherited from his parents.",
+      "He gets invited to stay at a house where, unknown to him, the family has sworn to kill his father's lineage.",
+      "According to the house's strict tradition, a guest cannot be harmed as long as they are inside the house.",
+      "The protagonist realizes the danger and does hilarious tricks to avoid stepping outside the front gate.",
+      "Directed by S. S. Rajamouli, this comedy thriller stars Sunil Varma and Saloni."
+    ]
+  },
+  {
+    "id": 115,
+    "title": "RX 100",
+    "year": "2018",
+    "genre": "Romance, Action",
+    "actor": "Kartikeya Gummakonda",
+    "director": "Ajay Bhupathi",
+    "overview": "A passionate young man in a village falls deeply in love with the daughter of a local politician.",
+    "popularity": 0.79,
+    "hints": [
+      "A passionate young man in a village falls deeply in love with the daughter of a local politician.",
+      "They separate when she is forced to marry an NRI, leaving him devastated and turning him into a violent rebel.",
+      "He waits years for her return, holding onto the memories of their romance.",
+      "The climax features a shocking twist about the heroine's actual intentions and a dark betrayal.",
+      "Kartikeya Gummakonda stars in this raw, emotional romantic thriller alongside Payal Rajput."
+    ]
+  },
+  {
+    "id": 116,
+    "title": "Golconda High School",
+    "year": "2011",
+    "genre": "Sports, Drama",
+    "actor": "Sumanth",
+    "director": "Mohan Krishna Indraganti",
+    "overview": "A school's playground is about to be seized by a corrupt trustee who wants to build an elite coaching center.",
+    "popularity": 0.81,
+    "hints": [
+      "A school's playground is about to be seized by a corrupt trustee who wants to build an elite coaching center.",
+      "The principal challenges the trustee, promising that the school's cricket team will win the local championship to save the ground.",
+      "They hire a former student, who left the game due to a past tragedy, as the new coach for the undisciplined team.",
+      "The coach teaches the boys discipline, teamwork, and guides them through the tournament.",
+      "Sumanth plays the cricket coach Sampath in this acclaimed sports drama directed by Mohan Krishna Indraganti."
+    ]
+  },
+  {
+    "id": 117,
+    "title": "BRO",
+    "year": "2023",
+    "genre": "Fantasy, Comedy, Drama",
+    "actor": "Pawan Kalyan, Sai Durgha Tej",
+    "director": "Samuthirakani",
+    "overview": "An arrogant, busy corporate employee who complains he doesn't have enough time dies in a car accident.",
+    "popularity": 0.83,
+    "hints": [
+      "An arrogant, busy corporate employee who complains he doesn't have enough time dies in a car accident.",
+      "He is met by the personification of Time, who grants him a second lease of life for 90 days to settle his affairs.",
+      "He spends his remaining days trying to fix the lives of his siblings and family members, realizing his past mistakes.",
+      "The film features multiple hit songs and a playful, comedic relationship between the protagonist and Time.",
+      "Pawan Kalyan plays the avatar of Time alongside Sai Durgha Tej in this fantasy comedy drama."
+    ]
+  },
+  {
+    "id": 118,
+    "title": "Yeto Vellipoyindhi Manasu",
+    "year": "2012",
+    "genre": "Romance, Drama",
+    "actor": "Nani",
+    "director": "Gautham Vasudev Menon",
+    "overview": "A beautiful musical romance tracking the love story of two childhood friends across three stages of life.",
+    "popularity": 0.91,
+    "hints": [
+      "A beautiful musical romance tracking the love story of two childhood friends across three stages of life.",
+      "The narrative covers their school days, college romance, and their lives as working adults in their late twenties.",
+      "Their relationship is constantly strained by career ambitions, ego clashes, and family expectations.",
+      "The film features a critically acclaimed soundtrack composed by Ilaiyaraaja.",
+      "Nani and Samantha star as Varun and Nithya in this romantic drama directed by Gautham Vasudev Menon."
+    ]
+  },
+  {
+    "id": 119,
+    "title": "Most Eligible Bachelor",
+    "year": "2021",
+    "genre": "Romance, Comedy",
+    "actor": "Akhil Akkineni",
+    "director": "Bhaskar",
+    "overview": "An NRI IT professional returns to India to attend matchmaking ceremonies and find a bride.",
+    "popularity": 0.78,
+    "hints": [
+      "An NRI IT professional returns to India to attend matchmaking ceremonies and find a bride.",
+      "He falls in love with a stand-up comedian who questions his views on marriage and compatibility.",
+      "She challenges him to understand what he actually wants in a life partner, leading to a series of comedic events.",
+      "He faces a legal case and travels across cities to prove his understanding of relationships.",
+      "Akhil Akkineni and Pooja Hegde star in this romantic comedy directed by Bhaskar."
+    ]
+  },
+  {
+    "id": 120,
+    "title": "Manam",
+    "year": "2014",
+    "genre": "Fantasy, Drama, Romance",
+    "actor": "Nagarjuna Akkineni, Naga Chaitanya",
+    "director": "Vikram Kumar",
+    "overview": "A multi-generational fantasy drama about reincarnation, family bonds, and eternal love.",
+    "popularity": 0.73,
+    "hints": [
+      "A multi-generational fantasy drama about reincarnation, family bonds, and eternal love.",
+      "A young boy loses his parents in a car accident and grows up to become a successful businessman.",
+      "In his adulthood, he accidentally encounters a young college student who is the reincarnation of his deceased father.",
+      "He works to bring the reincarnated versions of his father and mother together, hoping to reunite them.",
+      "A historic film featuring three generations of the Akkineni family: ANR, Nagarjuna, and Naga Chaitanya."
+    ]
+  },
+  {
+    "id": 121,
+    "title": "Nannaku Prematho",
+    "year": "2016",
+    "genre": "Drama, Thriller, Action",
+    "actor": "NTR Jr",
+    "director": "Sukumar",
+    "overview": "An intelligent young man learns his father is terminally ill and has been cheated of his wealth by a cunning billionaire.",
+    "popularity": 0.73,
+    "hints": [
+      "An intelligent young man learns his father is termially ill and has been cheated of his wealth by a cunning billionaire.",
+      "He vows to ruin the billionaire's empire within 30 days to restore his father's honor before he passes away.",
+      "He uses logic, physics, and psychological games to outsmart the billionaire, targeting his daughter first.",
+      "Set in London, the film is known for its sophisticated action, mind games, and the lead actor's stylish beard.",
+      "NTR Jr. plays Abhiram alongside Jagapathi Babu and Rakul Preet Singh, directed by Sukumar."
+    ]
+  },
+  {
+    "id": 122,
+    "title": "Drushyam",
+    "year": "2014",
+    "genre": "Thriller, Mystery",
+    "actor": "Venkatesh",
+    "director": "Sripriya",
+    "overview": "A middle-class cable TV operator lives a simple life with his wife and two daughters in a small town.",
+    "popularity": 0.72,
+    "hints": [
+      "A middle-class cable TV operator lives a simple life with his wife and two daughters in a small town.",
+      "Their lives are shattered when a boy is accidentally killed by the elder daughter during an assault attempt.",
+      "The protagonist uses his knowledge gained from watching movies to create a perfect alibi for his family.",
+      "He outsmarts a brutal police investigation led by the deceased boy's mother, a high-ranking IG.",
+      "Venkatesh stars as Rambabu in this acclaimed thriller remake of the Malayalam hit 'Drishyam'."
+    ]
+  },
+  {
+    "id": 123,
+    "title": "Zombie Reddy",
+    "year": "2021",
+    "genre": "Horror, Comedy",
+    "actor": "Teja Sajja",
+    "director": "Prasanth Varma",
+    "overview": "A game developer travels to a faction-ridden village in Rayalaseema to attend his friend's wedding.",
+    "popularity": 0.67,
+    "hints": [
+      "A game developer travels to a faction-ridden village in Rayalaseema to attend his friend's wedding.",
+      "A local scientist's failed medical experiment creates a virus that turns villagers into mindless, biting creatures.",
+      "The wedding party gets trapped inside a mansion, fighting off hordes of infected villagers.",
+      "The protagonist must find a cure while managing a violent rivalry between two local village families.",
+      "The first-ever zombie comedy thriller in Telugu cinema, directed by Prasanth Varma and starring Teja Sajja."
+    ]
+  },
+  {
+    "id": 124,
+    "title": "PSV Garuda Vega",
+    "year": "2017",
+    "genre": "Spy, Action, Thriller",
+    "actor": "Dr. Rajasekhar",
+    "director": "Praveen Sattaru",
+    "overview": "An elite officer in the National Investigation Agency struggles to balance his dangerous job with his marital life.",
+    "popularity": 0.68,
+    "hints": [
+      "An elite officer in the National Investigation Agency struggles to balance his dangerous job with his marital life.",
+      "While investigating a routine traffic accident, he stumbles upon a massive corporate scam involving plutonium.",
+      "He must protect a hacker who has stolen the files exposing the conspiracy from professional assassins.",
+      "The film features high-budget, realistic action sequences set in Hyderabad, Georgia, and the deep sea.",
+      "Dr. Rajasekhar plays the NIA officer Shekhar in this critically acclaimed spy action thriller."
+    ]
+  },
+  {
+    "id": 125,
+    "title": "Khaidi No. 150",
+    "year": "2017",
+    "genre": "Action, Drama",
+    "actor": "Chiranjeevi",
+    "director": "V. V. Vinayak",
+    "overview": "A clever convict escapes from prison and plans to flee the country with stolen money.",
+    "popularity": 0.67,
+    "hints": [
+      "A clever convict escapes from prison and plans to flee the country with stolen money.",
+      "He encounters his doppelganger, a righteous social activist who is shot by a local corporate tycoon.",
+      "The convict assumes his lookalike's identity to hide, but gets moved by the activist's fight for poor farmers.",
+      "He uses his street-smart intelligence and combat skills to defeat the corporate syndicate and secure water rights.",
+      "Chiranjeevi plays a dual role in this massive blockbuster comeback film, which is a remake of 'Kaththi'."
     ]
   }
 ]

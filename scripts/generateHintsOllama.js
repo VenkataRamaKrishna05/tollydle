@@ -29,6 +29,10 @@ const FORBIDDEN_PHRASES = [
   "battle for a kingdom", "fight against evil", "heroic journey"
 ];
 
+const GENERIC_STARTS = [
+  "this movie", "a story about", "the plot follows", "in this film"
+];
+
 const CONCRETE_WORDS = new Set([
   "village", "city", "town", "school", "college", "campus", "temple", "church", "mosque",
   "house", "mansion", "forest", "river", "sea", "port", "market", "court", "jail", "prison",

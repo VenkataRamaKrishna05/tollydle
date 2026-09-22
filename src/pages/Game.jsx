@@ -82,7 +82,7 @@ function getMovieHints(movie) {
 
 export default function Game() {
   const [now, setNow] = useState(new Date());
-  const [dayKey, setDayKey] = useState(getDayKey(new Date()));
+  const [, setDayKey] = useState(getDayKey(new Date()));
   const movie = getTodayMovie(curatedMovies, now);
   const allHints = getMovieHints(movie);
 

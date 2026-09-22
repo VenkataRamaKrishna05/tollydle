@@ -26,3 +26,9 @@ dist-ssr
 # Temporary files
 tmp/
 .temp/
+
+.vercel
+
+# Test data files
+src/data/test_*
+

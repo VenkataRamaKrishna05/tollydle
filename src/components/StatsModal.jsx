@@ -42,7 +42,7 @@ export default function StatsModal({ isOpen, onClose, stats, winRate }) {
             </div>
 
             <div className="grid grid-cols-2 gap-4 mb-8">
-              {statItems.map((item, i) => (
+              {statItems.map((item) => (
                 <div key={item.label} className="bg-slate-800/40 rounded-2xl p-4 border border-slate-700/50">
                   <div className="flex items-center gap-2 text-slate-500 mb-1">
                     {item.icon}
