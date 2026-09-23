@@ -93,7 +93,17 @@ export default function Game() {
   const [suggestions, setSuggestions] = useState([]);
   const [resultGrid, setResultGrid] = useState([]);
   const [guessHistory, setGuessHistory] = useState([]);
-  const [gameStartedAt, setGameStartedAt] = useState(null);
+  const [gameStartedAt] = useState(() => {
+    const todayKey = `tollydle-start-${new Date().toISOString().split("T")[0]}`;
+    const savedStart = localStorage.getItem(todayKey);
+    if (savedStart) {
+      const parsed = Number.parseInt(savedStart, 10);
+      if (!Number.isNaN(parsed)) return new Date(parsed);
+    }
+    const startTime = new Date();
+    localStorage.setItem(todayKey, startTime.getTime().toString());
+    return startTime;
+  });
   const [gameCompletedAt, setGameCompletedAt] = useState(null);
   const [shake, setShake] = useState(false);
   const [showStats, setShowStats] = useState(false);
@@ -147,9 +157,7 @@ export default function Game() {
   function handleGuess(guess) {
     if (gameOver) return;
     const currentTime = new Date();
-    const startedAt = gameStartedAt ?? currentTime;
-    if (!gameStartedAt) setGameStartedAt(startedAt);
-
+    const startedAt = gameStartedAt;
     const isCorrect = guess.trim().toLowerCase() === movie.title.toLowerCase();
     setGuessHistory(prev => [...prev, guess]);
 
