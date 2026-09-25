@@ -1,6 +1,6 @@
 import { Trophy, Info } from "lucide-react";
 
-export default function Header({ onShowStats, dayNumber }) {
+export default function Header({ onShowStats, onShowHelp, dayNumber, isPractice = false }) {
   return (
     <header className="glass-header w-full">
       <div className="max-w-4xl mx-auto px-4 h-16 flex items-center justify-between">
@@ -13,18 +13,29 @@ export default function Header({ onShowStats, dayNumber }) {
               Tollydle
             </h1>
             <p className="text-[10px] uppercase tracking-widest text-slate-500 font-semibold">
-              Daily Telugu Movie Guess
+              {isPractice ? "Practice Mode (Unlimited)" : "Daily Telugu Movie Guess"}
             </p>
           </div>
         </div>
 
         <div className="flex items-center gap-4">
           <div className="hidden sm:block text-right">
-            <p className="text-[10px] uppercase tracking-widest text-slate-500 font-bold">Puzzle</p>
-            <p className="text-sm font-mono text-sky-400 font-bold leading-none">#{dayNumber}</p>
+            <p className="text-[10px] uppercase tracking-widest text-slate-500 font-bold">
+              {isPractice ? "Mode" : "Puzzle"}
+            </p>
+            <p className="text-sm font-mono text-sky-400 font-bold leading-none">
+              {isPractice ? "Practice" : `#${dayNumber}`}
+            </p>
           </div>
           <div className="h-8 w-px bg-slate-800" />
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1">
+            <button
+              onClick={onShowHelp}
+              className="p-2 rounded-full hover:bg-slate-800 transition-colors text-slate-400 hover:text-sky-400"
+              title="How to Play"
+            >
+              <Info size={20} />
+            </button>
             <button
               onClick={onShowStats}
               className="p-2 rounded-full hover:bg-slate-800 transition-colors text-slate-400 hover:text-sky-400"

@@ -1,24 +1,31 @@
 import { useState, useEffect } from "react";
+import { useSearchParams } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import confetti from "canvas-confetti";
 import curatedMovies from "../data/curated_manual_hints.json";
-import allMovies from "../data/movies.json";
+import allMoviesCombined from "../data/all_movies_combined.json";
 import { getTodayMovie } from "../utils/getTodayMovie";
+import { filterMovieSuggestions } from "../utils/fuzzySearch";
 import GuessInput from "../components/GuessInput";
 import HintList from "../components/HintList";
 import Header from "../components/Header";
 import GameTimer from "../components/GameTimer";
 import StatsModal from "../components/StatsModal";
-import { Share2, RotateCcw, CheckCircle2, AlertCircle } from "lucide-react";
+import HelpModal from "../components/HelpModal";
+import { Share2, RotateCcw, CheckCircle2, AlertCircle, RefreshCw } from "lucide-react";
 
 const MAX_ATTEMPTS = 5;
 const MAX_HINTS = 5;
-const GAME_TIME_LIMIT_SECONDS = 5 * 60;
 
-function formatClock(totalSeconds) {
+function formatCountdown(totalSeconds) {
   const safeSeconds = Math.max(0, totalSeconds);
-  const minutes = Math.floor(safeSeconds / 60);
+  const hours = Math.floor(safeSeconds / 3600);
+  const minutes = Math.floor((safeSeconds % 3600) / 60);
   const seconds = safeSeconds % 60;
+  
+  if (hours > 0) {
+    return `${String(hours).padStart(2, "0")}:${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
+  }
   return `${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
 }
 
@@ -35,12 +42,17 @@ function formatDuration(totalSeconds) {
   return `${minutes} min${minutes === 1 ? "" : "s"} and ${seconds} sec${seconds === 1 ? "" : "s"}`;
 }
 
-function getDayKey(date) {
-  return `${date.getFullYear()}-${date.getMonth()}-${date.getDate()}`;
+function getLocalDateString(date = new Date()) {
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, "0");
+  const day = String(date.getDate()).padStart(2, "0");
+  return `${year}-${month}-${day}`;
 }
 
-function getTodayString() {
-  return new Date().toISOString().split("T")[0];
+function getYesterdayLocalDateString(date = new Date()) {
+  const yesterday = new Date(date);
+  yesterday.setDate(yesterday.getDate() - 1);
+  return getLocalDateString(yesterday);
 }
 
 function getPrimaryGenre(genre) {
@@ -81,32 +93,48 @@ function getMovieHints(movie) {
 }
 
 export default function Game() {
+  const [searchParams] = useSearchParams();
+  const isPractice = searchParams.get("mode") === "practice";
+
   const [now, setNow] = useState(new Date());
-  const [, setDayKey] = useState(getDayKey(new Date()));
-  const movie = getTodayMovie(curatedMovies, now);
+  const todayStr = getLocalDateString(now);
+
+  // Practice mode random movie index
+  const [practiceIndex, setPracticeIndex] = useState(() => Math.floor(Math.random() * curatedMovies.length));
+
+  const movie = isPractice ? curatedMovies[practiceIndex] : getTodayMovie(curatedMovies, now);
   const allHints = getMovieHints(movie);
 
-  const [attempts, setAttempts] = useState(0);
-  const [visibleHints, setVisibleHints] = useState(allHints.slice(0, 1));
-  const [message, setMessage] = useState("");
-  const [gameOver, setGameOver] = useState(false);
-  const [suggestions, setSuggestions] = useState([]);
-  const [resultGrid, setResultGrid] = useState([]);
-  const [guessHistory, setGuessHistory] = useState([]);
-  const [gameStartedAt] = useState(() => {
-    const todayKey = `tollydle-start-${new Date().toISOString().split("T")[0]}`;
-    const savedStart = localStorage.getItem(todayKey);
-    if (savedStart) {
-      const parsed = Number.parseInt(savedStart, 10);
-      if (!Number.isNaN(parsed)) return new Date(parsed);
+  const stateStorageKey = isPractice ? null : `tollydle-state-${todayStr}`;
+
+  const [savedState] = useState(() => {
+    if (isPractice) return null;
+    try {
+      const saved = localStorage.getItem(stateStorageKey);
+      return saved ? JSON.parse(saved) : null;
+    } catch {
+      return null;
     }
-    const startTime = new Date();
-    localStorage.setItem(todayKey, startTime.getTime().toString());
-    return startTime;
   });
-  const [gameCompletedAt, setGameCompletedAt] = useState(null);
+
+  const [attempts, setAttempts] = useState(savedState ? savedState.attempts : 0);
+  const [visibleHints, setVisibleHints] = useState(() => {
+    const hintCount = savedState ? Math.min(savedState.attempts + 1, MAX_HINTS) : 1;
+    return allHints.slice(0, hintCount);
+  });
+  const [message, setMessage] = useState(savedState ? savedState.message : "");
+  const [gameOver, setGameOver] = useState(savedState ? savedState.gameOver : false);
+  const [suggestions, setSuggestions] = useState([]);
+  const [resultGrid, setResultGrid] = useState(savedState ? savedState.resultGrid : []);
+  const [guessHistory, setGuessHistory] = useState(savedState ? savedState.guessHistory : []);
+  
+  const [gameStartedAt, setGameStartedAt] = useState(() => new Date());
+  const [gameCompletedAt, setGameCompletedAt] = useState(
+    savedState && savedState.gameCompletedAt ? new Date(savedState.gameCompletedAt) : null
+  );
   const [shake, setShake] = useState(false);
   const [showStats, setShowStats] = useState(false);
+  const [showHelp, setShowHelp] = useState(false);
   
   const [stats, setStats] = useState(() => {
     const saved = localStorage.getItem("tollydle-stats");
@@ -116,12 +144,39 @@ export default function Game() {
   const baseDate = new Date(2024, 0, 1);
   const dayNumber = Math.floor((new Date(now.getFullYear(), now.getMonth(), now.getDate()) - baseDate) / (1000 * 60 * 60 * 24)) + 1;
 
+  useEffect(() => {
+    if (isPractice || !stateStorageKey) return;
+    const stateToSave = {
+      attempts,
+      guessHistory,
+      resultGrid,
+      gameOver,
+      message,
+      gameCompletedAt: gameCompletedAt ? gameCompletedAt.toISOString() : null
+    };
+    localStorage.setItem(stateStorageKey, JSON.stringify(stateToSave));
+  }, [attempts, guessHistory, resultGrid, gameOver, message, gameCompletedAt, stateStorageKey, isPractice]);
+
+  function startNextPracticeMovie() {
+    const nextIdx = (practiceIndex + 1) % curatedMovies.length;
+    setPracticeIndex(nextIdx);
+    setAttempts(0);
+    setGuessHistory([]);
+    setResultGrid([]);
+    setGameOver(false);
+    setMessage("");
+    setGameStartedAt(new Date());
+    setGameCompletedAt(null);
+    const nextMovie = curatedMovies[nextIdx];
+    setVisibleHints(getMovieHints(nextMovie).slice(0, 1));
+  }
+
   function updateStats(didWin) {
-    const today = getTodayString();
+    if (isPractice) return; // Do not alter daily streak in practice mode
+    const today = getLocalDateString(now);
     setStats(prev => {
       if (prev.lastPlayedDate === today) return prev;
-      const yesterday = new Date(); yesterday.setDate(yesterday.getDate() - 1);
-      const yesterdayStr = yesterday.toISOString().split("T")[0];
+      const yesterdayStr = getYesterdayLocalDateString(now);
       
       let newStreak = didWin ? (prev.lastWinDate === yesterdayStr ? prev.currentStreak + 1 : 1) : 0;
       const updated = {
@@ -139,20 +194,10 @@ export default function Game() {
 
   useEffect(() => {
     const timer = setInterval(() => {
-      const currentTime = new Date();
-      setNow(currentTime);
-      setDayKey(getDayKey(currentTime));
-      if (gameStartedAt && !gameOver) {
-        if (Math.floor((currentTime - gameStartedAt) / 1000) >= GAME_TIME_LIMIT_SECONDS) {
-          setMessage(`Time's up! The movie was "${movie.title}".`);
-          setGameOver(true);
-          setGameCompletedAt(currentTime);
-          updateStats(false);
-        }
-      }
+      setNow(new Date());
     }, 1000);
     return () => clearInterval(timer);
-  }, [gameStartedAt, gameOver, movie.title]);
+  }, []);
 
   function handleGuess(guess) {
     if (gameOver) return;
@@ -187,11 +232,39 @@ export default function Game() {
     }
   }
 
+  async function handleShare() {
+    const grid = [...resultGrid, ...Array(MAX_ATTEMPTS - resultGrid.length).fill("⬜")].join(" ");
+    const shareText = isPractice 
+      ? `🎬 Tollydle (Practice Mode)\n\n${grid}\n\n🔥 ${resultGrid.includes("🟩") ? "Victory!" : "Missed!"}\n📊 ${resultGrid.length}/5\n⏳ Play: https://tollydle.vercel.app`
+      : `🎬 Tollydle #${dayNumber}\n\n${grid}\n\n🔥 ${resultGrid.includes("🟩") ? "Victory!" : "Missed!"}\n📊 ${resultGrid.length}/5\n⏳ Play: https://tollydle.vercel.app`;
+
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: "Tollydle",
+          text: shareText,
+          url: "https://tollydle.vercel.app",
+        });
+        return;
+      } catch {
+        // Fallback to clipboard if user cancels or browser blocks share
+      }
+    }
+
+    navigator.clipboard.writeText(shareText);
+    alert("Copied result to clipboard!");
+  }
+
   const elapsed = gameStartedAt ? Math.floor(((gameCompletedAt ?? now) - gameStartedAt) / 1000) : 0;
 
   return (
     <div className="min-h-screen bg-slate-950 flex flex-col items-center">
-      <Header onShowStats={() => setShowStats(true)} dayNumber={dayNumber} />
+      <Header 
+        onShowStats={() => setShowStats(true)} 
+        onShowHelp={() => setShowHelp(true)}
+        dayNumber={dayNumber} 
+        isPractice={isPractice}
+      />
       
       <main className="w-full max-w-2xl px-4 py-12 flex flex-col items-center gap-8">
         <motion.div 
@@ -199,7 +272,7 @@ export default function Game() {
           animate={{ opacity: 1, y: 0 }}
           className="w-full flex justify-center"
         >
-          <GameTimer elapsed={elapsed} isCritical={elapsed > 240} />
+          <GameTimer elapsed={elapsed} />
         </motion.div>
 
         <motion.div 
@@ -217,7 +290,7 @@ export default function Game() {
             <div className={shake ? "shake" : ""}>
               <GuessInput 
                 onGuess={handleGuess} 
-                onInputChange={(inp) => setSuggestions(inp.trim().length < 2 ? [] : allMovies.map(m => m.title).filter(t => t.toLowerCase().includes(inp.toLowerCase())).slice(0, 5))} 
+                onInputChange={(inp) => setSuggestions(filterMovieSuggestions(allMoviesCombined, inp))} 
                 disabled={gameOver} 
                 suggestions={suggestions} 
               />
@@ -277,19 +350,26 @@ export default function Game() {
             className="w-full flex flex-col gap-4"
           >
             <button
-              onClick={() => {
-                const grid = [...resultGrid, ...Array(MAX_ATTEMPTS - resultGrid.length).fill("⬜")].join(" ");
-                navigator.clipboard.writeText(`🎬 Tollydle #${dayNumber}\n\n${grid}\n\n🔥 ${resultGrid.includes("🟩") ? "Victory!" : "Missed!"}\n📊 ${resultGrid.length}/5\n⏳ Play: tollydle.vercel.app`);
-                alert("Copied to clipboard!");
-              }}
+              onClick={handleShare}
               className="w-full py-4 rounded-2xl bg-gradient-to-r from-sky-600 to-indigo-600 text-white font-bold flex items-center justify-center gap-2 shadow-xl shadow-sky-600/20 active:scale-[0.98] transition-all"
             >
               <Share2 size={20} />
               Share Result
             </button>
-            <p className="text-center text-xs text-slate-500 flex items-center justify-center gap-2">
-              Next puzzle in <span className="font-mono font-bold text-slate-300">{formatClock(getSecondsUntilNextMovie(now))}</span>
-            </p>
+
+            {isPractice ? (
+              <button
+                onClick={startNextPracticeMovie}
+                className="w-full py-4 rounded-2xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold flex items-center justify-center gap-2 shadow-xl shadow-emerald-600/20 active:scale-[0.98] transition-all"
+              >
+                <RefreshCw size={20} />
+                Play Another Movie
+              </button>
+            ) : (
+              <p className="text-center text-xs text-slate-500 flex items-center justify-center gap-2">
+                Next puzzle in <span className="font-mono font-bold text-slate-300">{formatCountdown(getSecondsUntilNextMovie(now))}</span>
+              </p>
+            )}
           </motion.div>
         )}
       </main>
@@ -299,6 +379,11 @@ export default function Game() {
         onClose={() => setShowStats(false)} 
         stats={stats} 
         winRate={stats.played > 0 ? Math.round((stats.wins / stats.played) * 100) : 0} 
+      />
+
+      <HelpModal
+        isOpen={showHelp}
+        onClose={() => setShowHelp(false)}
       />
     </div>
   );
