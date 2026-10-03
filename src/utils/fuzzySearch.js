@@ -49,7 +49,7 @@ export function matchesMovie(title, searchInput) {
   const pInput = phoneticNormalize(rawInput);
   const pTitle = phoneticNormalize(rawTitle);
 
-  if (pTitle.includes(pInput)) return true;
+  if (pInput.length >= 2 && pTitle.includes(pInput)) return true;
 
   // 3. Word token prefix match
   const inputWords = rawInput.split(/\s+/).filter(Boolean);
@@ -59,7 +59,9 @@ export function matchesMovie(title, searchInput) {
     titleWords.some(tw => {
       const pTw = phoneticNormalize(tw);
       const pIw = phoneticNormalize(iw);
-      return tw.toLowerCase().startsWith(iw) || pTw.startsWith(pIw) || pTw.includes(pIw);
+      if (tw.toLowerCase().startsWith(iw) || pTw.startsWith(pIw)) return true;
+      if (pIw.length >= 2 && pTw.includes(pIw)) return true;
+      return false;
     })
   );
 }

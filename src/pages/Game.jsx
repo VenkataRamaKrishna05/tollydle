@@ -84,11 +84,11 @@ function getMovieHints(movie) {
   if (storyHints.length > 0) return storyHints.slice(0, MAX_HINTS);
   
   return [
-    getPrimaryGenre(movie.genre) ? `Hint: Primary genre is ${getPrimaryGenre(movie.genre)}.` : null,
-    getDecadeLabel(movie.year) ? `Hint: Released in the ${getDecadeLabel(movie.year)}.` : null,
-    getInitials(movie.director) ? `Hint: Director initials are ${getInitials(movie.director)}.` : null,
-    getInitials(movie.actor) ? `Hint: Lead actor initials are ${getInitials(movie.actor)}.` : null,
-    getTitlePatternHint(movie.title),
+    getPrimaryGenre(movie?.genre) ? `Hint: Primary genre is ${getPrimaryGenre(movie?.genre)}.` : null,
+    getDecadeLabel(movie?.year) ? `Hint: Released in the ${getDecadeLabel(movie?.year)}.` : null,
+    getInitials(movie?.director) ? `Hint: Director initials are ${getInitials(movie?.director)}.` : null,
+    getInitials(movie?.actor) ? `Hint: Lead actor initials are ${getInitials(movie?.actor)}.` : null,
+    getTitlePatternHint(movie?.title),
   ].filter(Boolean).slice(0, MAX_HINTS);
 }
 
@@ -96,13 +96,13 @@ export default function Game() {
   const [searchParams] = useSearchParams();
   const isPractice = searchParams.get("mode") === "practice";
 
-  const [now, setNow] = useState(new Date());
-  const todayStr = getLocalDateString(now);
+  const [initialDate] = useState(() => new Date());
+  const todayStr = getLocalDateString(initialDate);
 
   // Practice mode random movie index
   const [practiceIndex, setPracticeIndex] = useState(() => Math.floor(Math.random() * curatedMovies.length));
 
-  const movie = isPractice ? curatedMovies[practiceIndex] : getTodayMovie(curatedMovies, now);
+  const movie = isPractice ? curatedMovies[practiceIndex] : getTodayMovie(curatedMovies, initialDate);
   const allHints = getMovieHints(movie);
 
   const stateStorageKey = isPractice ? null : `tollydle-state-${todayStr}`;
@@ -119,6 +119,7 @@ export default function Game() {
 
   const [attempts, setAttempts] = useState(savedState ? savedState.attempts : 0);
   const [visibleHints, setVisibleHints] = useState(() => {
+    if (savedState?.gameOver) return allHints;
     const hintCount = savedState ? Math.min(savedState.attempts + 1, MAX_HINTS) : 1;
     return allHints.slice(0, hintCount);
   });
@@ -128,21 +129,34 @@ export default function Game() {
   const [resultGrid, setResultGrid] = useState(savedState ? savedState.resultGrid : []);
   const [guessHistory, setGuessHistory] = useState(savedState ? savedState.guessHistory : []);
   
-  const [gameStartedAt, setGameStartedAt] = useState(() => new Date());
+  const [gameStartedAt, setGameStartedAt] = useState(() => (
+    savedState && savedState.gameStartedAt ? new Date(savedState.gameStartedAt) : new Date()
+  ));
   const [gameCompletedAt, setGameCompletedAt] = useState(
     savedState && savedState.gameCompletedAt ? new Date(savedState.gameCompletedAt) : null
   );
   const [shake, setShake] = useState(false);
   const [showStats, setShowStats] = useState(false);
   const [showHelp, setShowHelp] = useState(false);
+  const [copiedToast, setCopiedToast] = useState(false);
+
+  const [countdown, setCountdown] = useState(() => getSecondsUntilNextMovie(new Date()));
   
   const [stats, setStats] = useState(() => {
     const saved = localStorage.getItem("tollydle-stats");
-    return saved ? JSON.parse(saved) : { played: 0, wins: 0, currentStreak: 0, maxStreak: 0, lastPlayedDate: null, lastWinDate: null };
+    if (!saved) return { played: 0, wins: 0, currentStreak: 0, maxStreak: 0, lastPlayedDate: null, lastWinDate: null };
+    const parsed = JSON.parse(saved);
+    const today = getLocalDateString(initialDate);
+    const yesterdayStr = getYesterdayLocalDateString(initialDate);
+    // Check if streak broke due to skipped day
+    if (parsed.lastWinDate && parsed.lastWinDate !== today && parsed.lastWinDate !== yesterdayStr) {
+      parsed.currentStreak = 0;
+    }
+    return parsed;
   });
 
   const baseDate = new Date(2024, 0, 1);
-  const dayNumber = Math.floor((new Date(now.getFullYear(), now.getMonth(), now.getDate()) - baseDate) / (1000 * 60 * 60 * 24)) + 1;
+  const dayNumber = Math.round((new Date(initialDate.getFullYear(), initialDate.getMonth(), initialDate.getDate()) - baseDate) / (1000 * 60 * 60 * 24)) + 1;
 
   useEffect(() => {
     if (isPractice || !stateStorageKey) return;
@@ -152,10 +166,19 @@ export default function Game() {
       resultGrid,
       gameOver,
       message,
+      gameStartedAt: gameStartedAt.toISOString(),
       gameCompletedAt: gameCompletedAt ? gameCompletedAt.toISOString() : null
     };
     localStorage.setItem(stateStorageKey, JSON.stringify(stateToSave));
-  }, [attempts, guessHistory, resultGrid, gameOver, message, gameCompletedAt, stateStorageKey, isPractice]);
+  }, [attempts, guessHistory, resultGrid, gameOver, message, gameStartedAt, gameCompletedAt, stateStorageKey, isPractice]);
+
+  useEffect(() => {
+    if (!gameOver || isPractice) return;
+    const timer = setInterval(() => {
+      setCountdown(getSecondsUntilNextMovie(new Date()));
+    }, 1000);
+    return () => clearInterval(timer);
+  }, [gameOver, isPractice]);
 
   function startNextPracticeMovie() {
     const nextIdx = (practiceIndex + 1) % curatedMovies.length;
@@ -165,7 +188,8 @@ export default function Game() {
     setResultGrid([]);
     setGameOver(false);
     setMessage("");
-    setGameStartedAt(new Date());
+    const now = new Date();
+    setGameStartedAt(now);
     setGameCompletedAt(null);
     const nextMovie = curatedMovies[nextIdx];
     setVisibleHints(getMovieHints(nextMovie).slice(0, 1));
@@ -173,10 +197,10 @@ export default function Game() {
 
   function updateStats(didWin) {
     if (isPractice) return; // Do not alter daily streak in practice mode
-    const today = getLocalDateString(now);
+    const today = getLocalDateString(new Date());
     setStats(prev => {
       if (prev.lastPlayedDate === today) return prev;
-      const yesterdayStr = getYesterdayLocalDateString(now);
+      const yesterdayStr = getYesterdayLocalDateString(new Date());
       
       let newStreak = didWin ? (prev.lastWinDate === yesterdayStr ? prev.currentStreak + 1 : 1) : 0;
       const updated = {
@@ -192,24 +216,17 @@ export default function Game() {
     });
   }
 
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setNow(new Date());
-    }, 1000);
-    return () => clearInterval(timer);
-  }, []);
-
   function handleGuess(guess) {
-    if (gameOver) return;
+    if (gameOver || !movie) return;
     const currentTime = new Date();
-    const startedAt = gameStartedAt;
     const isCorrect = guess.trim().toLowerCase() === movie.title.toLowerCase();
     setGuessHistory(prev => [...prev, guess]);
 
     if (isCorrect) {
       setResultGrid(prev => [...prev, "🟩"]);
-      setMessage(`Correct! You solved it in ${formatDuration(Math.floor((currentTime - startedAt) / 1000))}.`);
+      setMessage(`Correct! You solved it in ${formatDuration(Math.floor((currentTime - gameStartedAt) / 1000))}.`);
       setGameOver(true);
+      setVisibleHints(allHints);
       setGameCompletedAt(currentTime);
       updateStats(true);
       confetti({ particleCount: 150, spread: 80, origin: { y: 0.6 } });
@@ -225,6 +242,7 @@ export default function Game() {
     if (nextAttempt >= MAX_ATTEMPTS) {
       setMessage(`Game over! The movie was "${movie.title}".`);
       setGameOver(true);
+      setVisibleHints(allHints);
       setGameCompletedAt(currentTime);
       updateStats(false);
     } else {
@@ -246,16 +264,19 @@ export default function Game() {
           url: "https://tollydle.vercel.app",
         });
         return;
-      } catch {
-        // Fallback to clipboard if user cancels or browser blocks share
+      } catch (err) {
+        if (err?.name === "AbortError") return;
       }
     }
 
-    navigator.clipboard.writeText(shareText);
-    alert("Copied result to clipboard!");
+    try {
+      await navigator.clipboard.writeText(shareText);
+      setCopiedToast(true);
+      setTimeout(() => setCopiedToast(false), 2500);
+    } catch {
+      // Ignore clipboard write failure
+    }
   }
-
-  const elapsed = gameStartedAt ? Math.floor(((gameCompletedAt ?? now) - gameStartedAt) / 1000) : 0;
 
   return (
     <div className="min-h-screen bg-slate-950 flex flex-col items-center">
@@ -272,7 +293,7 @@ export default function Game() {
           animate={{ opacity: 1, y: 0 }}
           className="w-full flex justify-center"
         >
-          <GameTimer elapsed={elapsed} />
+          <GameTimer gameStartedAt={gameStartedAt} gameCompletedAt={gameCompletedAt} />
         </motion.div>
 
         <motion.div 
@@ -280,9 +301,9 @@ export default function Game() {
           animate={{ opacity: 1, scale: 1 }}
           className="w-full glass rounded-[2.5rem] p-8 sm:p-12 relative shadow-2xl overflow-hidden"
         >
-          <div className="absolute top-0 right-0 p-8 flex gap-1 pointer-events-none opacity-20">
+          <div className="absolute top-0 right-0 p-8 flex gap-1 pointer-events-none opacity-80 z-10">
              {Array.from({ length: MAX_ATTEMPTS }).map((_, i) => (
-                <div key={i} className={`w-3 h-3 rounded-full ${i < attempts ? (resultGrid[i] === "🟩" ? "bg-emerald-500" : "bg-rose-500") : "bg-slate-700"}`} />
+                <div key={`dot-${i}`} className={`w-3 h-3 rounded-full transition-all duration-300 ${i < attempts ? (resultGrid[i] === "🟩" ? "bg-emerald-400 shadow-[0_0_8px_rgba(52,211,153,0.5)]" : "bg-rose-500 shadow-[0_0_8px_rgba(244,63,94,0.5)]") : "bg-slate-700/60"}`} />
              ))}
           </div>
 
@@ -326,11 +347,11 @@ export default function Game() {
              animate={{ opacity: 1 }}
              className="w-full space-y-4"
            >
-             <h3 className="text-xs font-bold uppercase tracking-widest text-slate-500 px-4">Guess History</h3>
+             <h3 className="text-xs font-bold uppercase tracking-widest text-slate-400 px-4">Guess History</h3>
              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                {guessHistory.map((g, i) => (
                  <motion.div 
-                   key={i} 
+                   key={`guess-${i}-${g}`} 
                    initial={{ opacity: 0, x: -10 }}
                    animate={{ opacity: 1, x: 0 }}
                    className="flex items-center justify-between bg-slate-900/40 px-5 py-3 rounded-2xl border border-slate-800/60"
@@ -351,10 +372,10 @@ export default function Game() {
           >
             <button
               onClick={handleShare}
-              className="w-full py-4 rounded-2xl bg-gradient-to-r from-sky-600 to-indigo-600 text-white font-bold flex items-center justify-center gap-2 shadow-xl shadow-sky-600/20 active:scale-[0.98] transition-all"
+              className="w-full py-4 rounded-2xl bg-gradient-to-r from-sky-600 to-indigo-600 hover:from-sky-500 hover:to-indigo-500 text-white font-bold flex items-center justify-center gap-2 shadow-xl shadow-sky-600/20 active:scale-[0.98] transition-all"
             >
               <Share2 size={20} />
-              Share Result
+              {copiedToast ? "Copied Result to Clipboard! ✓" : "Share Result"}
             </button>
 
             {isPractice ? (
@@ -366,8 +387,8 @@ export default function Game() {
                 Play Another Movie
               </button>
             ) : (
-              <p className="text-center text-xs text-slate-500 flex items-center justify-center gap-2">
-                Next puzzle in <span className="font-mono font-bold text-slate-300">{formatCountdown(getSecondsUntilNextMovie(now))}</span>
+              <p className="text-center text-xs text-slate-400 flex items-center justify-center gap-2">
+                Next puzzle in <span className="font-mono font-bold text-slate-300">{formatCountdown(countdown)}</span>
               </p>
             )}
           </motion.div>

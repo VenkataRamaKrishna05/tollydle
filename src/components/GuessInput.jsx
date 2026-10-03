@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Search } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -6,6 +6,30 @@ export default function GuessInput({ onGuess, onInputChange, disabled, suggestio
   const [value, setValue] = useState("");
   const [showList, setShowList] = useState(false);
   const [highlightedIndex, setHighlightedIndex] = useState(-1);
+
+  const containerRef = useRef(null);
+  const listRef = useRef(null);
+
+  // Close dropdown on click outside
+  useEffect(() => {
+    function handleClickOutside(e) {
+      if (containerRef.current && !containerRef.current.contains(e.target)) {
+        setShowList(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  // Scroll highlighted item into view
+  useEffect(() => {
+    if (highlightedIndex >= 0 && listRef.current) {
+      const activeEl = listRef.current.children[highlightedIndex];
+      if (activeEl) {
+        activeEl.scrollIntoView({ block: "nearest" });
+      }
+    }
+  }, [highlightedIndex]);
 
   function handleSubmit(e) {
     if (e) e.preventDefault();
@@ -36,11 +60,11 @@ export default function GuessInput({ onGuess, onInputChange, disabled, suggestio
   }
 
   return (
-    <div className="relative w-full max-w-xl mx-auto z-50">
+    <div ref={containerRef} className="relative w-full max-w-xl mx-auto z-50">
       <form onSubmit={handleSubmit} className="relative group">
         <div className="absolute -inset-1 bg-gradient-to-r from-sky-500 to-indigo-600 rounded-2xl blur opacity-25 group-focus-within:opacity-50 transition duration-1000 group-focus-within:duration-200"></div>
         <div className="relative flex items-center bg-slate-900 rounded-2xl border border-slate-800/50 overflow-hidden shadow-2xl">
-          <div className="pl-5 text-slate-500">
+          <div className="pl-5 text-slate-400">
             <Search size={20} />
           </div>
           <input
@@ -56,7 +80,7 @@ export default function GuessInput({ onGuess, onInputChange, disabled, suggestio
               setHighlightedIndex(-1);
             }}
             placeholder="Search Telugu movies..."
-            className="w-full bg-transparent px-5 py-4 text-slate-100 placeholder-slate-500 outline-none font-medium text-lg"
+            className="w-full bg-transparent px-5 py-4 text-slate-100 placeholder-slate-400 outline-none font-medium text-lg"
           />
           <button
             type="submit"
@@ -71,6 +95,7 @@ export default function GuessInput({ onGuess, onInputChange, disabled, suggestio
       <AnimatePresence>
         {showList && !disabled && suggestions.length > 0 && (
           <motion.ul
+            ref={listRef}
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95 }}
@@ -91,7 +116,7 @@ export default function GuessInput({ onGuess, onInputChange, disabled, suggestio
               >
                 <span className="font-semibold">{title}</span>
                 <span className={`text-[10px] uppercase font-black tracking-widest px-2 py-1 rounded-lg border ${
-                   index === highlightedIndex ? "border-white/40 text-white" : "border-slate-700 text-slate-500 opacity-0 group-hover:opacity-100"
+                   index === highlightedIndex ? "border-white/40 text-white" : "border-slate-700 text-slate-400 opacity-0 group-hover:opacity-100"
                 }`}>Select</span>
               </li>
             ))}

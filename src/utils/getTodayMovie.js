@@ -6,7 +6,7 @@ export function getTodayMovie(movies, currentDate = new Date()) {
     currentDate.getDate()
   );
 
-  const diffDays = Math.floor((todayStart - baseDate) / (1000 * 60 * 60 * 24));
+  const diffDays = Math.round((todayStart - baseDate) / (1000 * 60 * 60 * 24));
   const safeIndex = ((diffDays % movies.length) + movies.length) % movies.length;
 
   return movies[safeIndex];
